@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ItemAvatarSkin" width="150" height="180" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Image source="shop_item_bg_png"  left="0" top="0" anchorOffsetX="0" anchorOffsetY="0"  width="100%" height="100%"/>
+	<e:Image id="imgAvatar" source="man_01_png" width="120" height="140" anchorOffsetX="0" anchorOffsetY="0" top="10" horizontalCenter="-0.5"/>
+	<ns1:EButton id="btnAction" width="120" height="45"  horizontalCenter="0" bottom="5">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_yellow_s_png"/>
+			<e:Label id="laAction" text="选择" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="20" strokeColor="0xfc9f3a" stroke="3" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+</e:Skin>

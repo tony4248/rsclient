@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShareSkin" width="600" height="550" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_s_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="73,79,444,278"/>
+	<e:Image width="75" height="45" source="txt_title_share_png" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" top="25" scaleX="0.8" scaleY="0.8"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="15" left="20">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="15" right="20">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Group id="grpShare" width="90%" height="400"  anchorOffsetY="0" horizontalCenter="0.5" top="90">
+		<e:Image source="trans_bg_png" width="100%" height="400" horizontalCenter="0" scale9Grid="62,62,376,376" anchorOffsetY="0" top="0"/>
+		<e:Rect width="85%" height="250" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="1" top="10" fillColor="0xffffff"/>
+		<e:Group id="grpQrCode" width="400" height="250"  anchorOffsetY="0" horizontalCenter="0" top="10">
+		</e:Group>
+		<e:Group id="grpUrl" width="100%" height="60" anchorOffsetY="0" horizontalCenter="0" bottom="70">
+			<e:Image width="450" height="45" source="txt_bg_png" verticalCenter="0" left="80" scale9Grid="89,4,540,29"/>
+			<e:Label text="Url:" fontFamily="微软雅黑" textAlign="center" width="70" size="28" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" bold="true" verticalCenter="0.5" left="10"/>
+			<e:Label id="labUrl" text="http://290.93.102.38:8080/?rid=938374" fontFamily="微软雅黑" textAlign="center" width="450" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xF4BA0C" stroke="3" bold="true" verticalCenter="0" left="80"/>
+		</e:Group>
+		<e:Group id="grpEntityId" width="100%" height="60"  anchorOffsetY="0" horizontalCenter="0" bottom="10">
+			<e:Image width="220" height="45" source="txt_bg_png" horizontalCenter="90" verticalCenter="0"/>
+			<e:Label text="推广码:" fontFamily="微软雅黑" textAlign="right" width="140" size="32"  height="35" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="-106.5" textColor="0xcec7b3" bold="true" verticalCenter="0.5"/>
+			<e:Label id="labEntityId" text="803832" fontFamily="微软雅黑" textAlign="left" width="220" size="36" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xf4ba0c" stroke="3" bold="true" verticalCenter="0" horizontalCenter="90"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

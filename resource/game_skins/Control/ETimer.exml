@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ETimerSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<e:Image source="timer_png" width="90" height="90"/>
+	<e:Label id="lbTime" text="20" horizontalCenter="0" verticalCenter="0"  fontFamily="Microsoft YaHei" textAlign="center" bold="true" stroke="3" strokeColor="0x47a40e"/>
+</e:Skin>

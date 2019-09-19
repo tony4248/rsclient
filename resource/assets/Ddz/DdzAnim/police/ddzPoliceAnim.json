@@ -1,0 +1,64 @@
+{"mc":{
+	"ddzPoliceAnim":{
+		"frameRate":24,
+		"labels":[
+			{"name":"start","frame":1,"end":8}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"baojing1",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"baojing2",
+			"x":10,
+			"y":0
+			},
+			{
+			"res":"baojing3",
+			"x":16,
+			"y":0
+			},
+			{
+			"res":"baojing4",
+			"x":16,
+			"y":0
+			},
+			{
+			"res":"baojing5",
+			"x":16,
+			"y":0
+			},
+			{
+			"res":"baojing6",
+			"x":16,
+			"y":0
+			},
+			{
+			"res":"baojing7",
+			"x":16,
+			"y":0
+			},
+			{
+			"res":"baojing8",
+			"x":10,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"baojing3":{"x":1,"y":75,"w":57,"h":69},
+		"baojing6":{"x":156,"y":1,"w":63,"h":69},
+		"baojing5":{"x":1,"y":1,"w":74,"h":70},
+		"baojing8":{"x":156,"y":74,"w":63,"h":69},
+		"baojing4":{"x":156,"y":1,"w":63,"h":69},
+		"baojing2":{"x":156,"y":74,"w":63,"h":69},
+		"baojing1":{"x":79,"y":1,"w":73,"h":70},
+		"baojing7":{"x":1,"y":75,"w":57,"h":69}
+	}}

@@ -1,0 +1,28 @@
+{"mc":{
+	"ddzShunZiAnim":{
+		"frameRate":20,
+		"labels":[
+			{"name":"start","frame":1,"end":2}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"sz01",
+			"x":4,
+			"y":2
+			},
+			{
+			"res":"sz02",
+			"x":4,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"sz02":{"x":0,"y":0,"w":252,"h":238},
+		"sz01":{"x":252,"y":0,"w":252,"h":237}
+	}}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TexasPotsSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<e:Image source="pots_chips_png" anchorOffsetX="0" anchorOffsetY="0" width="114" height="42" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="labChipNums" size="16" text="88888" textColor="0xe0dcd7" fontFamily="微软雅黑" width="90" textAlign="center" height="25" verticalAlign="middle" right="0" anchorOffsetX="0" bottom="0"/>
+</e:Skin>

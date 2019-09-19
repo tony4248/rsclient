@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopSkin" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_info_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0"  scale9Grid="96,72,580,433" locked="true"/>
+	<e:Image width="515" height="126" source="win_title_red_bg_png" horizontalCenter="0" anchorOffsetX="0" anchorOffsetY="0"  top="-30"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="10" left="10" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="8" right="10" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Image id="imgWinTitle" source="txt_title_shop_png" horizontalCenter="0" top="10"/>
+	<e:Group id="grpTabMenu" anchorOffsetY="0" top="90" width="200" left="20" height="480"  locked="true">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0"/>
+		<e:Group id="grpTabBtns" anchorOffsetY="0" width="200" height="360"  horizontalCenter="0" top="0">
+			<e:RadioButton groupName="tabShopBtns" id="shopRadioBtn" label="VIP充值" skinName="CRadioButtonSkin" value="0" selected="true" horizontalCenter="0"/>
+			<e:RadioButton groupName="tabShopBtns" label="充值" skinName="CRadioButtonSkin" value="1" horizontalCenter="0"/>
+			<e:RadioButton groupName="tabShopBtns" label="兑换" skinName="CRadioButtonSkin" value="2" horizontalCenter="0"/>
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="20"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="grpShop" anchorOffsetY="0" top="90" width="620" height="480"  left="240" locked="true">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376"/>
+		<e:ViewStack id="vsShop" width="100%" height="100%" anchorOffsetX="0" anchorOffsetY="0">
+		</e:ViewStack>
+	</e:Group>
+	<e:Group id="grpVipRecharge" width="620" height="480"  top="90"  left="240" locked="true" visible="false">
+		<e:Group width="100%" height="60"  top="0"  horizontalCenter="0">
+			<e:Group width="100%" height="100%"  top="0"  left="0">
+				<ns1:EButton id="btnShopOrders1" width="135" height="55" left="10" verticalCenter="0">
+					<ns1:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_blue_s_png"/>
+					<e:Label text="查看记录" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0x5D88DD" stroke="3" textAlign="center" verticalAlign="middle"/>
+					</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+				<ns1:EButton id="btnRefresh1" width="50" height="50"  verticalCenter="0" right="10">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_refresh_png"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+			</e:Group>			
+		</e:Group>
+		<e:Label id="lablistOperatorsNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="60"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="350" horizontalCenter="0" top="60" anchorOffsetY="0">
+			<e:List id="listOperators" itemRendererSkinName="ItemOperatorSkin" width="100%" height="100%" horizontalCenter="0" verticalCenter="25"  anchorOffsetY="0">
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:TileLayout paddingLeft="5" paddingRight="5" horizontalGap="5" verticalGap="5"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:EditableText id="labVipRechargeNote" width="96%" height="63" text="注意:如需要购买房卡和金币,请添加如上任一操作人员的微信,10秒内完成充值." anchorOffsetX="0" left="10" top="407" fontFamily="Microsoft JhengHei" textColor="0xe8e8e8" textAlign="left" size="22" multiline="true" wordWrap="true" anchorOffsetY="0"/>
+	</e:Group>
+	<e:Group id="grpRecharge" width="620" height="480"  top="90"  left="240">
+		<e:Group width="100%" height="60"  top="0"  horizontalCenter="0">
+			<e:Group width="100%" height="100%"  top="0"  left="0">
+				<ns1:EButton id="btnShopOrders2" width="135" height="55" left="10" verticalCenter="0">
+					<ns1:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_blue_s_png"/>
+					<e:Label text="查看记录" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0x5D88DD" stroke="3" textAlign="center" verticalAlign="middle"/>
+					</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+				<ns1:EButton id="btnRefresh2" width="50" height="50"  verticalCenter="0" right="10">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_refresh_png"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+			</e:Group>			
+		</e:Group>
+		<e:Label id="lablistProductsNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="60"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="350" horizontalCenter="0" top="60">
+			<e:List id="listProducts" itemRendererSkinName="ItemProductSkin" width="100%" height="100%" horizontalCenter="13" verticalCenter="300" >
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:TileLayout orientation="rows" paddingLeft="5" paddingRight="5" columnWidth="200" requestedColumnCount="3" rowAlign="justifyUsingGap" columnAlign="justifyUsingGap"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:EditableText id="labRechargeNote" width="96%" height="59" text="注意:如需要购买房卡和金币,请添加如上任一操作人员的微信,10秒内完成充值." anchorOffsetX="0" left="10" top="411" fontFamily="Microsoft JhengHei" textColor="0xe8e8e8" textAlign="left" size="22" multiline="true" wordWrap="true" anchorOffsetY="0"/>
+	</e:Group>
+	<e:Group id="grpWithdraw" width="620" height="480"  top="90"  left="240" locked="true" visible="false">
+		<e:Image width="220" height="45" source="txt_bg_png" left="240" top="15"/>
+		<e:Label text="账号余额:" fontFamily="微软雅黑" textAlign="center" width="160" size="24"  height="35" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="-131" top="20" textColor="0xcec7b3"/>
+		<e:Label id="labCoinsNum" text="803832" fontFamily="微软雅黑" textAlign="left" width="220" size="24" height="35" verticalAlign="middle" anchorOffsetX="0" top="20" textColor="0xf4ba0c" stroke="1" left="250"/>
+		<ns1:EButton id="btnShopOrders3" width="140" height="55" left="450" top="10">
+				<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_blue_s_png"/>
+				<e:Label text="查看记录" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="24" strokeColor="0x5D88DD" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+				</ns1:skinName>
+		</ns1:EButton>
+		<e:TextInput id="txtBankCardNo" prompt="银行卡卡号" width="360" height="45" top="80" left="80"/>
+		<e:Label text="银行卡卡号, 请先绑定银行卡卡号" fontFamily="微软雅黑" textAlign="left" width="450" size="20"  height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xcec7b3" top="120" left="80"/>
+		<ns1:EButton id="btnBindBankCard" width="140" height="55" left="450" top="80">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_blue_s_png"/>
+				<e:Label text="绑定银行卡" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="24" strokeColor="0x5D88DD" stroke="3" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<e:TextInput id="txtAlipayId" prompt="收款支付宝" width="360" height="45" top="160" left="80"/>
+		<ns1:EButton id="btnBindAlipay" width="140" height="50" left="450" top="160">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_blue_s_png"/>
+				<e:Label text="绑定支付宝" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="24" strokeColor="0x5D88DD" stroke="3" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<e:Label text="收款的支付宝账号" fontFamily="微软雅黑" textAlign="left" width="450" size="20"  height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xcec7b3" top="205" left="80"/>
+		<e:TextInput id="txtAmount" prompt="兑换金额" width="360" height="45" x="85" y="237" anchorOffsetX="0"/>
+		<e:Label text="要兑换的金额" fontFamily="微软雅黑" textAlign="left" width="450" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" top="280" left="80"/>
+		<ns1:EButton id="btnWithdraw" width="165" top="320" height="60" horizontalCenter="-40">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="申请兑换" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="24" strokeColor="0x1B8E15" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<e:EditableText id="labWithdrawNote" width="96%" height="69" text="注意:提完申请,请耐心等待工作人员处理." anchorOffsetX="0" left="10" top="401" fontFamily="Microsoft JhengHei" textColor="0xe8e8e8" textAlign="left" size="22" multiline="true" wordWrap="true" anchorOffsetY="0"/>
+	</e:Group>
+</e:Skin>

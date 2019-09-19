@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AccountSettingSkin" width="550" height="450" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_s_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0" locked="true"/>
+	<e:Image width="75" height="45" source="txt_title_me_png" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" top="25" scaleX="0.8" scaleY="0.8"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="15" left="20">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="15" right="20">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Group id="grpAccountSetting" width="90%" height="70%"  horizontalCenter="0" anchorOffsetY="0" top="90" locked="true">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376" locked="true"/>
+		<e:Group width="100%" height="70"  horizontalCenter="0" anchorOffsetY="0" top="0">
+			<e:Group width="70" height="70"  verticalCenter="0" left="0">
+				<e:Image id="imgUserAvatar" source="avatar_man_png" width="54" height="54" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image source="avatar_bg_png" verticalCenter="0" width="70" height="70" horizontalCenter="0" locked="true"/>
+			</e:Group>
+			<e:Label id="labUserName" text="用户的名字" fontFamily="微软雅黑" size="22" width="160" textAlign="left" left="80" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xf9f5e8" top="0"/>
+			<e:Label text="ID:" fontFamily="微软雅黑" textAlign="left" width="31" size="20" height="35" verticalAlign="middle" left="80" anchorOffsetX="0" top="35" textColor="0xedbe31"/>
+			<e:Label id="labUserId" text="2123121" fontFamily="微软雅黑" textAlign="left" width="94" size="20" height="35" verticalAlign="middle" textColor="0xF9F5E8" left="113" anchorOffsetX="0" top="35"/>
+			<ns1:EButton id="btnChangeAvatar" height="50" width="140" top="10" right="30">
+				<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_purple_s_png"/>
+					<e:Label text="修改头像" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="20" strokeColor="0x860DC6" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+				</ns1:skinName>
+			</ns1:EButton>
+		</e:Group>
+		<e:Group width="100%" height="50"  horizontalCenter="0" anchorOffsetY="0" top="90">
+			<e:TextInput id="txtNickName" prompt="昵称" width="300" height="45" verticalCenter="0.5" left="10" anchorOffsetX="0"/>
+			<ns1:EButton id="btnChangeNickName" height="50" width="140" top="0" right="30">
+				<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_yellow_s_png"/>
+					<e:Label text="修改昵称" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="20" strokeColor="0xfc9f3a" stroke="3" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+			</ns1:EButton>
+		</e:Group>
+		<e:Group width="100%" height="110"  horizontalCenter="0" anchorOffsetY="0" top="160">
+			<e:TextInput id="txtPassWord1" prompt="密码第一次" width="300" height="45" left="10" anchorOffsetX="0" top="5"/>
+			<e:TextInput id="txtPassWord2" prompt="再输一次" width="300" height="45" left="10" anchorOffsetX="0" top="55"/>
+			<ns1:EButton id="btnChangePassword" height="50" width="140" right="30" verticalCenter="0">
+				<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_blue_s_png"/>
+					<e:Label text="修改密码" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="20" strokeColor="0x5D88DD" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+				</ns1:skinName>
+			</ns1:EButton>
+		</e:Group>
+	</e:Group>
+	<e:Group id="grpChangeAvatars" anchorOffsetY="0" top="90" width="90%" height="70%"  horizontalCenter="0" visible="false" locked="true">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376" locked="true"/>
+		<e:Label id="lablistAvatarsNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="0" locked="true"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="100%" horizontalCenter="0" top="0">
+			<e:List id="listAvatars" itemRendererSkinName="ItemAvatarSkin" width="100%" height="100%" horizontalCenter="-2" verticalCenter="0" >
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:TileLayout paddingLeft="5" paddingRight="5" horizontalGap="5" verticalGap="5"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<ns1:EButton id="btnGrpClose" height="45" width="50" right="0" top="0">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_close_n_png"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+</e:Skin>

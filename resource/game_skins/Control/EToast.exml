@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EToastSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgBG" top="0" bottom="0" left="0" right="0" source="win_bg_png" fillMode="repeat" />
+	<e:Group width="960" height="150" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="imgMsgBg" height="100%" width="960" source="modal_png" y="0" horizontalCenter="0"/>
+        <e:Label id="labMsg" text="信息" width="600" height="100" verticalAlign="middle" textAlign="center" size="30" border="false" anchorOffsetX="0" anchorOffsetY="0" textColor="0xffffff" horizontalCenter="0" fontFamily="Microsoft YaHei" strokeColor="0x91381d" stroke="2" verticalCenter="0"/>
+	</e:Group>
+</e:Skin>

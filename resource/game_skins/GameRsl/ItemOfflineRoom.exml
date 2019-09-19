@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ItemOfflineRoomSkin" width="620" height="70" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Image id="img_dialog_outer" top="0" bottom="0" left="0" right="0" source="win_bg_png" fillMode="repeat"  locked="true"/>
+	<e:Image source="room_icon_png" left="0" verticalCenter="0" width="70" height="50" locked="true"/>
+	<e:Label text="ID:" fontFamily="微软雅黑" textAlign="left" width="31" size="20" height="35" verticalAlign="middle" left="70" anchorOffsetX="0" top="1" textColor="0xedbe31"/>
+	<e:Label id="labRoomId" text="2123121" fontFamily="微软雅黑" textAlign="left" width="94" size="20" height="35" verticalAlign="middle" textColor="0xF9F5E8" left="100" anchorOffsetX="0" top="1"/>
+	<e:Label id="labBottomTips" text="底分:" fontFamily="微软雅黑" textAlign="left" width="50" size="20"  height="35" verticalAlign="middle" left="185" top="0" anchorOffsetX="0" textColor="0xedbe31"/>
+	<e:Label id="labBottomScore" text="5" fontFamily="微软雅黑" textAlign="left" width="70" size="20"  height="35" verticalAlign="middle" left="240" textColor="0xf9f5e8" top="0" anchorOffsetX="0"/>
+
+	<e:Label id="labUsersNum" text="5" fontFamily="微软雅黑" textAlign="left" width="36" size="20"  height="35" verticalAlign="middle" left="350" textColor="0xf9f5e8" top="0" anchorOffsetX="0"/>
+	<e:Label text="局数:" fontFamily="微软雅黑" textAlign="left" width="50" size="20" height="35" verticalAlign="middle" left="390" top="0" anchorOffsetX="0" textColor="0xEDBE31" anchorOffsetY="0"/>
+	<e:Label id="labRounds" text="30" fontFamily="微软雅黑" textAlign="left" width="40" size="20" height="35" verticalAlign="middle" left="440" textColor="0xF9F5E8" top="1" anchorOffsetX="0"/>
+	<e:Image left="310" width="25" height="25" top="6" source="club_members_png"/>
+
+	<e:Image left="70" width="25" height="25" top="40" source="club_expiration_png"/>
+	<e:Label id="labCreateTime" text="2018-12-30 18:00:00" fontFamily="微软雅黑" textAlign="left" width="183" size="18"  height="35" verticalAlign="middle" textColor="0xf9f5e8" top="35" anchorOffsetX="0" left="100"/>
+	<ns1:EButton id="btnAction" width="120" height="50"  right="10" verticalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_yellow_s_png"/>
+				<e:Label text="详情" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0xfc9f3a" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+	</ns1:EButton>
+	<e:Image source="white_dot_png" horizontalCenter="0" width="100%" bottom="0"/>
+</e:Skin>

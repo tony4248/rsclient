@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EmailSkin" width="600" height="500" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_info_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0"  scale9Grid="96,72,580,433" locked="true"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="10" left="10" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="8" right="10" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Image id="imgWinTitle" source="txt_title_email_png" horizontalCenter="0" top="20" locked="true"/>
+	<e:Group id="grpEmail" width="500" height="380" anchorOffsetX="0" anchorOffsetY="0" top="80" horizontalCenter="0" locked="true">
+		<e:Label text="来自:" fontFamily="微软雅黑" textAlign="center" width="80" size="20"  height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xcec7b3" top="15" left="10" locked="true"/>
+		<e:Group width="250" height="50" anchorOffsetX="0" anchorOffsetY="0" top="10" left="90">
+			<e:Image width="100%" height="100%" source="txt_bg_png" horizontalCenter="0" verticalCenter="0"/>
+			<e:Label id="labSender" text="来自:" fontFamily="微软雅黑" textAlign="left" width="95%" size="20"  height="90%" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="1.5" anchorOffsetY="0" verticalCenter="0.5" textColor="0xffffff"/>
+		</e:Group>
+		<ns1:EButton id="btnReply" width="130" height="55"  right="30" top="5">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_yellow_s_png"/>
+				<e:Label text="回复" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0xfc9f3a" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<e:Label text="标题:" fontFamily="微软雅黑" textAlign="center" width="80" size="20"  height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xcec7b3" top="65" left="10"/>
+		<e:Group width="350" height="50" anchorOffsetX="0" anchorOffsetY="0" top="60" left="90">
+			<e:Image width="100%" height="100%" source="txt_bg_png" horizontalCenter="0" verticalCenter="0"/>
+			<e:Label id="labTitle" text="来自:" fontFamily="微软雅黑" textAlign="left" width="95%" size="20"  height="90%" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="1.5" anchorOffsetY="0" verticalCenter="0.5" textColor="0xffffff"/>
+		</e:Group>
+		<e:Label text="时间:" fontFamily="微软雅黑" textAlign="center" width="80" size="20"  height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xcec7b3" top="115" left="10"/>
+		<e:Group width="350" height="50" anchorOffsetX="0" anchorOffsetY="0" top="110" left="90">
+			<e:Image width="100%" height="100%" source="txt_bg_png" horizontalCenter="0" verticalCenter="0"/>
+			<e:Label id="labReceivedDate" text="来自:" fontFamily="微软雅黑" textAlign="left" width="95%" size="20"  height="90%" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="1.5" anchorOffsetY="0" verticalCenter="0.5" textColor="0xffffff"/>
+		</e:Group>
+		<e:Group width="400" height="200" anchorOffsetX="0" anchorOffsetY="0" top="160" horizontalCenter="0">
+			<e:Image width="100%" height="100%" source="trans_bg_png" horizontalCenter="0"  anchorOffsetY="0" anchorOffsetX="0" scale9Grid="28,6,173,38" y="0"/>
+			<e:Label id="labContent" text="来自:" fontFamily="微软雅黑" textAlign="left" width="95%" size="20"  height="90%" verticalAlign="top" anchorOffsetX="0" horizontalCenter="1.5" anchorOffsetY="0" verticalCenter="0.5" textColor="0xffffff" multiline="true" wordWrap="true"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

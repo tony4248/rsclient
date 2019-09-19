@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TRadioButtonSkin"  width="40" height="40" states="up,down,disabled" xmlns:e="http://ns.egret.com/eui">
+    <e:Group width="100%" height="100%">
+        <e:layout>
+            <e:HorizontalLayout verticalAlign="middle" gap="15"/>
+        </e:layout>
+        <e:Image fillMode="scale" width="40" height="40" alpha="1" alpha.disabled="0.5" alpha.down="0.7"
+                 source="radio_off_png"
+                 source.down="radio_on_png"/>
+         <e:Label id="labelDisplay" textColor="0xFFFFFF"  horizontalCenter="0" verticalCenter="0"
+                 bold="false" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6a6b70" stroke="3"
+                 textAlign="center" verticalAlign="middle"/>
+    </e:Group>
+</e:Skin>

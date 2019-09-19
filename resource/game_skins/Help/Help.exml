@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HelpSkin" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_b_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="92,87,744,449" locked="true"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="20" left="20" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="20" right="20" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Image id="imgWinTitle" source="txt_title_help_png" horizontalCenter="0" top="25" locked="true"/>
+	<e:Group id="grpTabMenu" anchorOffsetY="0" top="90" width="200" left="20" height="480"  locked="true">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0"/>
+		<e:Group id="grpTabBtns" anchorOffsetY="0" width="200" height="360"  horizontalCenter="0" top="0">
+			<e:RadioButton groupName="tabHelpBtns" id="helpRadioBtn" label="斗地主" skinName="CRadioButtonSkin" value="0" selected="true" horizontalCenter="0"/>
+			<e:RadioButton groupName="tabHelpBtns" label="德州扑克" skinName="CRadioButtonSkin" value="1" horizontalCenter="0"/>
+			<e:RadioButton groupName="tabHelpBtns" label="炸金花" skinName="CRadioButtonSkin" value="2" horizontalCenter="0"/>
+			<e:RadioButton groupName="tabHelpBtns" label="抢庄牛牛" skinName="CRadioButtonSkin" value="3" horizontalCenter="0"/>
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="20"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="grpHelp" anchorOffsetY="0" top="90" width="620" height="480"  left="240" locked="true">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376"/>
+		<e:ViewStack id="vsHelp" width="100%" height="100%" anchorOffsetX="0" anchorOffsetY="0">
+		</e:ViewStack>
+	</e:Group>
+	<e:Group id="grpDdzHelp" width="620" height="480"  top="90"  left="240" visible="false" locked="true">
+		<e:Scroller skinName="ListSkin" width="100%" height="95%" horizontalCenter="0" top="20">
+			<e:Label text="斗地主是一种在中国流行的纸牌游戏。该游戏由三人个玩一副牌，地主是一方，其余两家为另一方，双方对战，先出完的一方胜。" textColor="0xF9F5E8" fontFamily="Microsoft YaHei" size="24"
+	         anchorOffsetX="0" width="490" lineSpacing="5"  anchorOffsetY="0" height="220"/>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="grpTexasHelp" width="620" height="480"  top="90"  left="240" locked="true" visible="false">
+		<e:Scroller skinName="ListSkin" width="100%" height="95%" horizontalCenter="0" top="20">
+			<e:Label text="德州扑克是一种牌类游戏, 可多人参与, 它的玩法是，玩家每人发两张底牌, 桌面依次发5张公共牌, 玩家用自己的两张底牌和5张公共牌自由组合，按大小决定胜负。" textColor="0xF9F5E8" fontFamily="Microsoft YaHei" size="24"
+	         anchorOffsetX="0" width="490" lineSpacing="5"  anchorOffsetY="0" height="220"/>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="grpZjhHelp" width="620" height="480"  top="90"  left="240" locked="true" visible="false">
+		<e:Scroller skinName="ListSkin" width="100%" height="95%" horizontalCenter="0" top="20">
+			<e:Label text="炸金花是流传的一种民间纸牌游戏。具有独特的比牌规则。玩家以手中的三张牌比输赢, 玩家可以在自己操作时与其他最多一位玩家比牌。" textColor="0xF9F5E8" fontFamily="Microsoft YaHei" size="24"
+	         anchorOffsetX="0" width="490" lineSpacing="5"  anchorOffsetY="0" height="220"/>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="grpQznnHelp" width="620" height="480"  top="90"  left="240" locked="true" visible="false">
+		<e:Scroller skinName="ListSkin" width="100%" height="95%" horizontalCenter="0" top="20">
+			<e:Label text="抢庄牛牛是一种流行的纸牌游戏,由多人同时进行,总共52张牌(除大小王)在确定庄家后, 系统将给予玩家每人5张牌, 用户将根据5张牌进行排列组合, 并且闲家一一和庄家进行大小比较确定胜负。玩家必须将手中的5张牌分为两组, 第一组牌数为3张, 第二组为2张。如果这里出现的两组牌中, 点数成为10的倍数的话, 就是获得胜利。" textColor="0xF9F5E8" fontFamily="Microsoft YaHei" size="24"
+	         anchorOffsetX="0" width="490" lineSpacing="5"  anchorOffsetY="0" height="220"/>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

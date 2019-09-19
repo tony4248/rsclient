@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TipsSkin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+    <e:Image id="imgBG" top="0" bottom="0" left="0" right="0" source="win_bg_png" fillMode="repeat" />
+    <e:Group id="grpTipsWin" height="400" width="550" horizontalCenter="0" verticalCenter="-20">
+		<e:Image height="100%" width="100%" x="0" y="0" source="win_info_png" scale9Grid="96,72,580,433"/>
+		<e:Image id="imgWinTitle" width="380" height="100" source="txt_title_tips_png" horizontalCenter="0" top="-30"/>
+        <e:Label id="labContent" text="标签" width="400" height="160" verticalAlign="middle" textAlign="center" size="26" textColor="0xFFFFFF" fontFamily="微软雅黑"  horizontalCenter="0" multiline="true" top="60"/>
+        <ns1:EButton id="btnClose" anchorOffsetY="0" height="60" width="60" right="10" top="10">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+        <ns1:EButton id="btnOk" height="60" width="145" bottom="50" horizontalCenter="-100">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="确定" size="22" bold="true" textColor="0xFFFFFF" fontFamily="微软雅黑" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnCancel" height="60" width="145" horizontalCenter="100" bottom="50">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_fold_png"/>
+				<e:Label text="取消" size="22" bold="true" textColor="0xFFFFFF" fontFamily="微软雅黑" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+    </e:Group>
+</e:Skin>

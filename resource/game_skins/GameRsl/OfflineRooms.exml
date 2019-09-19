@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="OfflineRoomsSkin" width="700" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_m_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="96,84,578,420" locked="true"/>
+	<e:Image id="imgWinTitle" source="txt_title_score_png" horizontalCenter="0" top="25" locked="true"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="15" left="20" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="15" right="20" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Group id="grpOfflineRooms" width="620" height="410" anchorOffsetX="0" anchorOffsetY="0" top="80" horizontalCenter="0">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376"/>
+		<e:Group width="100%" height="50" top="0" horizontalCenter="0">
+			<e:Label text="得分记录" size="24" fontFamily="Microsoft YaHei" stroke="2" strokeColor="0x4D4053" height="30" verticalAlign="middle" textAlign="center" anchorOffsetX="0" width="200" anchorOffsetY="0" wordWrap="true" verticalCenter="0" left="10"/>
+			<e:Group width="40%" height="100%"  top="0"  right="60">
+				<e:Image source="numbers_bg_png" anchorOffsetY="0" height="45" anchorOffsetX="0" width="200" scale9Grid="21,8,131,17" verticalCenter="0" right="30"/>
+				<ns1:EButton id="btnPageUp" width="40" height="40"  verticalCenter="0" right="200">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="page_up_png"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+				<e:Label id="labPagesNum" text="133/1300" textColor="0xFFFFFF" bold="true" fontFamily="Microsoft YaHei" size="22" strokeColor="0x404142" stroke="3" textAlign="center" verticalAlign="middle" height="35" width="150" verticalCenter="0" right="50"/>
+				<ns1:EButton id="btnPageDown" width="40" height="40"  right="10" verticalCenter="0">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="page_down_png"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+			</e:Group>
+			<ns1:EButton id="btnRefresh" width="50" height="50" verticalCenter="0" right="10">
+				<ns1:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_refresh_png"/>
+					</e:Skin>
+				</ns1:skinName>
+			</ns1:EButton>
+		</e:Group>
+		<e:Label id="lablistOfflineRoomsNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="50" locked="true"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="400" horizontalCenter="0" top="50">
+			<e:List id="listOfflineRooms" itemRendererSkinName="ItemOfflineRoomSkin" width="100%" height="100%" horizontalCenter="-2" verticalCenter="0" >
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+						<e:Object/>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout gap="3" paddingLeft="5" paddingRight="5" horizontalAlign="justify" verticalAlign="justify"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Label text="提示：系统只保留最近100次的得分记录" fontFamily="微软雅黑" textAlign="center" width="420" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" bottom="30"/>
+</e:Skin>

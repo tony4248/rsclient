@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ClubSettingSkin" width="550" height="400" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_s_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Image width="75" height="45" source="txt_title_setting_png" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" top="25" scaleX="0.8" scaleY="0.8"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="15" left="20">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="15" right="20">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Group id="grpDeleteClub" width="90%" height="120"  anchorOffsetY="0" horizontalCenter="0" top="100">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376" locked="true"/>
+		<e:TextInput id="txtClubId" prompt="俱乐部的Id" width="300" height="45" top="20" left="10"/>
+		<e:Label text="注意:俱乐部删除之后,不可恢复." fontFamily="微软雅黑" textAlign="left" width="480" size="20"  height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xcec7b3" top="65" left="10"/>
+		<ns1:EButton id="btnDeleteClub" width="145" height="60" top="15" left="320">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_fold_png"/>
+				<e:Label text="删除" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0xCC1E0E" stroke="3" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+
+	<e:Group id="grpTransferClub" width="90%" height="120"  horizontalCenter="0.5" anchorOffsetY="0" top="225">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376" locked="true"/>
+		<e:TextInput id="txtUserId" prompt="用户的Id" width="300" height="45" top="20" left="10"/>
+		<e:Label text="注意:本操作将变更俱乐部的拥有者." fontFamily="微软雅黑" textAlign="left" width="480" size="20"  height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xcec7b3" top="65" left="10"/>
+		<ns1:EButton id="btnTransferClub" width="145" height="60" top="15" left="320">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_raise_png"/>
+				<e:Label text="转让" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0xFCBC0F" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+</e:Skin>

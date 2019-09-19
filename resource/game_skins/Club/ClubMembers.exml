@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ClubMembersSkin" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_b_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="20" left="20">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="20" right="20">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Image id="imgWinTitle" source="txt_title_membermgmt_png" horizontalCenter="0" top="25"/>
+	<e:Group id="grpTabMenu" anchorOffsetY="0" top="90" width="200" left="20" height="480" >
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0"/>
+		<e:Group id="grpTabBtns" anchorOffsetY="0" width="200" height="100%"  horizontalCenter="0" top="0" locked="true">
+			<e:RadioButton groupName="tabBtns" id="radioBtn" label="会员列表" skinName="CRadioButtonSkin" value="0" selected="true" horizontalCenter="0"/>
+			<e:RadioButton groupName="tabBtns" label="管理员" skinName="CRadioButtonSkin" value="1" horizontalCenter="0"/>
+			<e:RadioButton groupName="tabBtns" label="申请列表" skinName="CRadioButtonSkin" value="2" horizontalCenter="0"/>
+			<e:RadioButton groupName="tabBtns" label="邀请会员" skinName="CRadioButtonSkin" value="3" horizontalCenter="0" visible="false"/>
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="20"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="grpMembers" anchorOffsetY="0" top="90" width="620" height="480"  left="240" locked="true">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376"/>
+		<e:ViewStack id="vsMembers" width="100%" height="100%" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Group>
+	<e:Group id="grpAllMembers" width="620" height="480"  top="90"  left="240" locked="true" visible="false">
+		<e:Group width="100%" height="50"  top="0"  horizontalCenter="0">
+			<e:Group width="60%" height="100%"  top="0"  left="0">
+				<e:TextInput id="txtMemberId" prompt="会员ID" width="150" height="40" left="10" verticalCenter="0"/>
+				<ns1:EButton id="btnMemberMgmt" width="130" height="55"  left="180" verticalCenter="0">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_blue_s_png"/>
+						<e:Label text="管理" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0x5D88DD" stroke="3" textAlign="center" verticalAlign="middle"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+				<ns1:EButton id="btnRefresh1" width="45" height="45"  left="320" verticalCenter="0">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_refresh_png"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+			</e:Group>
+			<e:Group width="40%" height="100%"  top="0"  right="0">
+				<e:Image source="numbers_bg_png" anchorOffsetY="0" height="45" anchorOffsetX="0" width="200" scale9Grid="21,8,131,17" verticalCenter="0" right="30"/>
+				<ns1:EButton id="btnPageUp" width="40" height="40"  verticalCenter="0" right="200">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="page_up_png"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+				<e:Label id="labPagesNum" text="133/1300" textColor="0xFFFFFF" bold="true" fontFamily="Microsoft YaHei" size="22" strokeColor="0x404142" stroke="3" textAlign="center" verticalAlign="middle" height="35" width="150" verticalCenter="0" right="50"/>
+				<ns1:EButton id="btnPageDown" width="40" height="40"  right="10" verticalCenter="0">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="page_down_png"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+			</e:Group>
+		</e:Group>
+		<e:Label id="lablistAllMembersNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="50" locked="true"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="440" horizontalCenter="0" top="50">
+			<e:List id="listAllMembers" itemRendererSkinName="ItemClubMemberSkin" width="100%" height="100%" horizontalCenter="-2" verticalCenter="0" >
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout gap="3" paddingLeft="5" paddingRight="5" horizontalAlign="justify" verticalAlign="justify"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="grpAdmins" width="620" height="480"  top="90"  left="240" locked="true" visible="false">
+		<e:Group width="100%" height="50"  top="0"  left="0">
+				<e:TextInput id="txtAdminId" prompt="会员ID" width="150" height="40" left="10" verticalCenter="0"/>
+				<ns1:EButton id="btnAddClubAdmin" width="165" height="55"  left="180" verticalCenter="0">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_blue_s_png"/>
+						<e:Label text="添加管理员" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0x5D88DD" stroke="3" textAlign="center" verticalAlign="middle"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+				<ns1:EButton id="btnRefresh2" height="45"  right="20" verticalCenter="0" width="45">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_refresh_png"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+		</e:Group>
+		<e:Label id="lablistAdminsNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="50"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="425" horizontalCenter="0" top="50" anchorOffsetY="0">
+			<e:List id="listAdmins" itemRendererSkinName="ItemClubMemberSkin" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" >
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout gap="3" paddingLeft="5" paddingRight="5" horizontalAlign="justify" verticalAlign="justify"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="grpAppliedMembers" width="620" height="480"  top="90"  left="240" locked="true" visible="false">
+		<e:Group width="100%" height="50"  top="0"  left="0">
+			<e:CheckBox id="cbAutoApprove" left="10" verticalCenter="0" label="" width="40" height="40"/>
+			<e:Label text="开启自动审批" size="22" fontFamily="Microsoft YaHei" stroke="2" strokeColor="0x4D4053" height="30" verticalAlign="middle" textAlign="left" anchorOffsetX="0" width="140" anchorOffsetY="0" wordWrap="true" verticalCenter="0" left="65"/>
+			<ns1:EButton id="btnRefresh3" height="45"  right="20" verticalCenter="0" width="45">
+				<ns1:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_refresh_png"/>
+					</e:Skin>
+				</ns1:skinName>
+			</ns1:EButton>
+		</e:Group>
+		<e:Label id="lablistAppliedMembersNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="50" locked="true"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="425" horizontalCenter="0" top="50">
+			<e:List id="listAppliedMembers" itemRendererSkinName="ItemAppliedMemberSkin" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" >
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout gap="3" paddingLeft="5" paddingRight="5" horizontalAlign="justify" verticalAlign="justify"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="grpInvitedMembers" width="620" height="480"  top="90"  left="240" locked="true" visible="false">
+		<e:Group width="100%" height="50"  top="0"  left="0">
+			<ns1:EButton id="btnRefresh4" height="45"  right="20" verticalCenter="0" width="45">
+				<ns1:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_refresh_png"/>
+					</e:Skin>
+				</ns1:skinName>
+			</ns1:EButton>
+		</e:Group>
+		<e:Label id="lablistInvitedMembersNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="50" locked="true"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="425" horizontalCenter="0" top="50">
+			<e:List id="listInvitedMembers" itemRendererSkinName="ItemClubMemberSkin" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" >
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout horizontalAlign="justify" gap="3"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

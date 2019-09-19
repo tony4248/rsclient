@@ -1,0 +1,28 @@
+{"mc":{
+	"ddzPlaneAnim":{
+		"frameRate":50,
+		"labels":[
+			{"name":"start","frame":1,"end":2}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"plane01",
+			"x":11,
+			"y":3
+			},
+			{
+			"res":"plane02",
+			"x":10,
+			"y":3
+			}
+			]
+}},
+	"res":{
+		"plane02":{"x":0,"y":0,"w":343,"h":195},
+		"plane01":{"x":0,"y":195,"w":342,"h":194}
+	}}

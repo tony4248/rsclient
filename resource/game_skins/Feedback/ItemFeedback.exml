@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ItemFeedbackSkin" width="620" height="70" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Image id="img_dialog_outer" top="0" bottom="0" left="0" right="0" source="win_bg_png" fillMode="repeat" />
+	<e:Group width="70" height="70" verticalCenter="0" left="0">
+		<e:Image id="imgFeedback" width="60" height="60" source="feedback_icon_png" />
+	</e:Group>
+	<e:Label id="labTitle" text="邮件的标题" fontFamily="微软雅黑" size="22" width="340" textAlign="left" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xf9f5e8" x="70" top="3"/>
+	<e:Label id="labUserId" text="用户具体名字" fontFamily="微软雅黑" size="20" width="120" textAlign="left" left="70" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xf9f5e8" top="32"/>
+	<e:Image left="200" width="25" height="25" top="38" source="club_expiration_png"/>
+	<e:Label id="labCreateTime" text="2018-12-30 18:00:00" fontFamily="微软雅黑" textAlign="left" width="205" size="20"  height="35" verticalAlign="middle" textColor="0xf9f5e8" top="32" anchorOffsetX="0" left="230"/>
+	<ns1:EButton id="btnView" width="120" height="55"  right="30" verticalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_yellow_s_png"/>
+				<e:Label text="查看" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0xfc9f3a" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+	</ns1:EButton>
+	<e:Image source="white_dot_png" horizontalCenter="0" width="100%" bottom="0" locked="true"/>
+</e:Skin>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MemberMgmtSkin" width="650" height="500" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_m_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0" locked="true"/>
+	<e:Image width="75" height="45" source="txt_title_members_png" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" top="25" scaleX="0.8" scaleY="0.8" locked="true"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="10" left="20" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="10" right="20" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Group id="grpMemberMgmt" width="90%" height="80%"  horizontalCenter="0" anchorOffsetY="0" bottom="20">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376" locked="true"/>
+		<e:Group width="100%" height="70"  horizontalCenter="0" anchorOffsetY="0" top="0">
+			<e:Group width="70" height="70"  verticalCenter="0" left="0">
+				<e:Image id="imgMemberAvatar" source="avatar_man_png" width="54" height="54" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image source="avatar_bg_png" verticalCenter="0" width="70" height="70" horizontalCenter="0" locked="true"/>
+			</e:Group>
+			<e:Label id="labMemberName" text="用户的名字" fontFamily="微软雅黑" size="22" width="160" textAlign="left" left="80" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xf9f5e8" top="0" locked="true"/>
+			<e:Label text="ID:" fontFamily="微软雅黑" textAlign="left" width="31" size="20" height="35" verticalAlign="middle" left="240" anchorOffsetX="0" top="0" textColor="0xedbe31"/>
+			<e:Label id="labMemberId" text="2123121" fontFamily="微软雅黑" textAlign="left" width="94" size="20" height="35" verticalAlign="middle" textColor="0xF9F5E8" left="280" anchorOffsetX="0" top="0" locked="true"/>
+			<e:Label text="LV:" fontFamily="微软雅黑" textAlign="left" width="35" size="20"  height="35" verticalAlign="middle" left="380" top="0" anchorOffsetX="0" textColor="0xedbe31" locked="true"/>
+			<e:Label id="labMemberLv" text="3" fontFamily="微软雅黑" textAlign="left" width="120" size="20"  height="35" verticalAlign="middle" left="421" textColor="0xf9f5e8" top="0" anchorOffsetX="0" locked="true"/>
+		</e:Group>
+		<e:Group width="100%" height="70"  horizontalCenter="0" anchorOffsetY="0" top="0">
+			<e:Label text="当前积分:" fontFamily="微软雅黑" textAlign="left" width="118" size="24" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xedbe31" top="100" left="80"/>
+			<e:Label id="labMemberScore" text="2345343" fontFamily="微软雅黑" textAlign="left" width="100" size="24" height="35" verticalAlign="middle" anchorOffsetX="0" top="100" textColor="0xf9f5e8" left="190"/>
+			<ns1:EButton id="btnResetScore" height="60" width="130" top="85" left="300">
+				<ns1:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_yellow_s_png"/>
+					<e:Label text="清零" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0xfc9f3a" stroke="3" textAlign="center" verticalAlign="middle"/>
+					</e:Skin>
+				</ns1:skinName>
+			</ns1:EButton>
+			<e:Label id="labCreateTime" text="2018-12-30 18:00:00" fontFamily="微软雅黑" textAlign="left" width="205" size="20" height="35" verticalAlign="middle" textColor="0xf9f5e8" anchorOffsetX="0" top="35" left="260"/>
+			<e:Label id="labIsAdmin" text="是" fontFamily="微软雅黑" textAlign="left" width="47" size="20" height="35" verticalAlign="middle" textColor="0xF9F5E8" anchorOffsetX="0" anchorOffsetY="0" left="160" top="35"/>
+			<e:Image width="25" height="25" source="club_expiration_png" top="40" left="230"/>
+			<e:Label text="管理员:" fontFamily="微软雅黑" textAlign="left" width="80" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xEDBE31" left="80" top="35"/>
+		</e:Group>
+		<e:Label text="+" fontFamily="微软雅黑" textAlign="center" width="20" size="30" height="35" verticalAlign="middle" textColor="0xf9f5e8" anchorOffsetX="0" left="150" top="160"/>
+		<e:Label text="-" fontFamily="微软雅黑" textAlign="center" width="20" size="30" height="35" verticalAlign="middle" textColor="0xF9F5E8" anchorOffsetX="0" top="230" left="150" bold="true"/>
+		<e:TextInput id="txtPlusScore" prompt="分数" width="120" height="45" anchorOffsetX="0" top="160" left="174"/>
+		<e:TextInput id="txtMinusScore" prompt="分数" width="120" height="45" anchorOffsetX="0" top="230" right="291"/>
+		<ns1:EButton id="btnPlusScore" width="130" height="60" top="150" left="300">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_blue_s_png"/>
+				<e:Label text="上分" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0x5D88DD" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnMinusScore" width="130" height="60" top="220" left="300">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_yellow_s_png"/>
+				<e:Label text="下分" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0xfc9f3a" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnDeleteMember" width="155" height="70" bottom="30" horizontalCenter="-120">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_fold_png"/>
+				<e:Label text="删除" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0xCC1E0E" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnAddAdmin" width="155" height="70" bottom="30" horizontalCenter="120">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="设为管理员" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0x1B8E15" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnRefresh" width="50" height="50" left="25" top="95">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_refresh_png"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnClubOrders" height="60" width="130" x="437" top="85">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_purple_s_png"/>
+				<e:Label text="记录" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0x860DC6" stroke="3" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+
+</e:Skin>

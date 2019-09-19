@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HallBKSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source="hall_png" left="0" top="0" right="0" bottom="0" locked="true"/>
+	<e:Group id="grpAvatar" width="180" height="80" anchorOffsetX="0" anchorOffsetY="0" left="0" top="0">
+		<e:Image left="-7" top="-2" source="avatar_bg_png"/>
+		<e:Label text="用户名六个字" size="20" fontFamily="Microsoft YaHei"  stroke="2" strokeColor="0x4d4053" top="10" left="80"/>
+		<e:Label text="ID:" size="20" fontFamily="Microsoft YaHei"  stroke="2" strokeColor="0x4d4053" left="80" top="45" textColor="0xf7a613"/>
+        <e:Label text="898766" size="20" fontFamily="Microsoft YaHei"  stroke="2" strokeColor="0x4d4053" left="110" top="45"/>
+	</e:Group>
+	<e:Group id="grpCards" width="200" height="65" anchorOffsetX="0" anchorOffsetY="0" top="8" left="240">
+		<e:Image source="numbers_bg_png" anchorOffsetY="0" height="32" anchorOffsetX="0" width="160" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image source="diamond_png" width="44" verticalCenter="0" left="0"/>
+		<e:Label text="192023" size="20" textColor="0xf7a613" fontFamily="Microsoft YaHei" stroke="2" strokeColor="0x4d4053" anchorOffsetX="0" width="118" anchorOffsetY="0" height="30" verticalAlign="middle" textAlign="center" bold="true" verticalCenter="0" horizontalCenter="0"/>
+        <ns1:EButton id="btnAddCards"  anchorOffsetX="0" width="45" height="45" right="0" verticalCenter="0">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="btn_add@1x_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+	</e:Group>
+	<e:Group id="grpCoins" width="200" height="65" anchorOffsetX="0" anchorOffsetY="0" left="450" top="8">
+		<e:Image source="numbers_bg_png" anchorOffsetY="0" height="32" anchorOffsetX="0" width="160" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image source="coin_png" width="44" verticalCenter="0" left="0"/>
+		<e:Label text="192023" size="20" textColor="0xf7a613" fontFamily="Microsoft YaHei" stroke="2" strokeColor="0x4d4053" anchorOffsetX="0" width="118" anchorOffsetY="0" height="30" verticalAlign="middle" textAlign="center" bold="true" verticalCenter="0" horizontalCenter="0"/>
+        <ns1:EButton id="btnAddCoins"  anchorOffsetX="0"  width="45" height="45" right="0" verticalCenter="0">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="btn_add@1x_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+	</e:Group>
+	<e:Group id="grpTopMenu" height="65" anchorOffsetX="0" anchorOffsetY="0" right="0" width="244" top="8">
+        <ns1:EButton id="btnSettings"  anchorOffsetX="0"  width="55" height="50" right="155" verticalCenter="0">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="menu_setting_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+		<ns1:EButton id="btnFeedback"  anchorOffsetX="0"  width="55" height="53" anchorOffsetY="0" right="85" verticalCenter="0">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="menu_feedback_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+		<ns1:EButton id="btnExit"  anchorOffsetX="0"  width="55" height="50" verticalCenter="0" right="10">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="menu_exit_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+	</e:Group>
+    <e:Group id="grpInstantMsg" width="718" height="37" anchorOffsetX="0" anchorOffsetY="0" top="100" horizontalCenter="0">
+       <e:Image  verticalCenter="0" left="0" width="45" height="45" source="laba_png"/>
+	   <e:Image source="txt_bg_png" />
+	   <e:Label id="labInstantMsg" text="及时消息" size="20" fontFamily="Microsoft YaHei"  stroke="2" strokeColor="0x4d4053" height="35" verticalCenter="0" verticalAlign="middle" textAlign="left" left="45" anchorOffsetX="0" width="670"/>
+	</e:Group>
+	<e:Group id="grpAnnouncement" width="280" height="410" anchorOffsetX="0" anchorOffsetY="0" top="145" left="30">
+		<e:Image source="announcement_png"  verticalCenter="0"  horizontalCenter="0"/>
+		<e:Label id="labAnnouncement" text="系统公告,公告内容" size="20" fontFamily="Microsoft YaHei" stroke="2" strokeColor="0x4D4053" height="283" verticalAlign="middle" textAlign="center" anchorOffsetX="0" width="254" x="10" y="72" anchorOffsetY="0" wordWrap="true"/>
+	</e:Group>
+    <e:Group id="grpMainBtns" width="580" height="410" y="148" anchorOffsetX="0" anchorOffsetY="0" right="56">
+        <ns1:EButton id="btnCreateRoom"  anchorOffsetX="0" left="0" top="0" width="250" height="200">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="btn_creatroom_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+         <ns1:EButton id="btnJoinRoom" anchorOffsetX="0" bottom="0" left="0" scaleX="1" width="250" height="200">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="btn_joinroom_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+		<ns1:EButton id="btnCoinMode"  anchorOffsetX="0" right="0" top="10" width="290" height="120">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="btn_coin_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+		<ns1:EButton id="btnContestMode"  anchorOffsetX="0" right="0" verticalCenter="0" width="290" height="120">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="btn_contest_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+				<ns1:EButton id="btnClubMode"  anchorOffsetX="0" right="0" bottom="10" width="290" height="120">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="btn_club_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+	</e:Group>
+	<e:Group id="grpMenu" width="691" height="80" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" bottom="0">
+        <ns1:EButton id="btnAgent"  anchorOffsetX="0" left="20" verticalCenter="-4" width="70" height="65">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="menu_agent_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+        <ns1:EButton id="btnEmail"  anchorOffsetX="0" verticalCenter="0" left="110" width="70" height="60" anchorOffsetY="0">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="menu_mail_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+        <ns1:EButton id="btnCharging"  anchorOffsetX="0" left="210" verticalCenter="0" width="68" height="64" anchorOffsetY="0">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="menu_charging_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+        <ns1:EButton id="btnShop"  anchorOffsetX="0" width="70" height="65" horizontalCenter="0" verticalCenter="-3">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="menu_shop_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+        <ns1:EButton id="btnWanFa"  anchorOffsetX="0" right="20" width="55" height="65" verticalCenter="-3" anchorOffsetY="0">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="menu_playinfo_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+		<ns1:EButton id="btnHistory"  anchorOffsetX="0" verticalCenter="0" width="70" height="60" right="110">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="menu_history_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+		<ns1:EButton id="btnShare"  anchorOffsetX="0" width="70" height="63" verticalCenter="-3" anchorOffsetY="0" right="210">
+                <ns1:skinName>
+                    <e:Skin states="up,down,disabled">
+                        <e:Image width="100%" height="100%" source="menu_share_png"/>
+                    </e:Skin>
+                </ns1:skinName>
+        </ns1:EButton>
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

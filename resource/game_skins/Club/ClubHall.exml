@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ClubHallSkin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source="clubhall_png" left="0" top="0" right="0" bottom="0" scale9Grid="260,80,522,480"/>
+	<ns1:EButton id="btnGoBack" width="75" height="75" top="5" right="5">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Group id="grpClub" width="460" height="70" anchorOffsetX="0" anchorOffsetY="0" y="6" x="340" locked="true">
+		<e:Label id="labClubName" text="嬴政赢俱乐部" size="28" fontFamily="Microsoft YaHei" stroke="2" strokeColor="0x4D4053" height="30" verticalAlign="middle" textAlign="center" anchorOffsetX="0" width="254" anchorOffsetY="0" wordWrap="true" horizontalCenter="0" top="5"/>
+		<e:Label id="labClubId" text="123321" size="20" fontFamily="Microsoft YaHei" stroke="2" strokeColor="0x4D4053" height="35" verticalAlign="middle" textAlign="center" anchorOffsetX="0" width="100" anchorOffsetY="0" wordWrap="true" top="35" left="200"/>
+		<e:Label text="ID:" fontFamily="微软雅黑" textAlign="left" width="31" size="20" height="35" verticalAlign="middle" left="160" anchorOffsetX="0" textColor="0xedbe31" top="35"/>
+	</e:Group>
+	<e:Group id="grpAnnouncement" width="360" height="460" anchorOffsetX="0" anchorOffsetY="0" top="120" left="60">
+		<e:Image source="announcement_png"  verticalCenter="0"  horizontalCenter="0" width="100%" height="100%"/>
+		<e:Label id="labAnnouncement" text="系统公告,公告内容" size="28" fontFamily="Microsoft YaHei" lineSpacing="5"  stroke="2" strokeColor="0x4D4053" height="330" verticalAlign="middle" textAlign="center" anchorOffsetX="0" width="330" x="10" y="72" anchorOffsetY="0" wordWrap="true"/>
+	</e:Group>
+    <e:Group id="grpOnlineRooms" width="800" height="460" anchorOffsetX="0" anchorOffsetY="0" top="120" horizontalCenter="178.5" locked="true">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="-1.5" verticalCenter="0" scale9Grid="62,62,376,376" anchorOffsetX="0"/>
+		<e:Group width="100%" height="80" top="0" horizontalCenter="0">
+			<ns1:EButton id="btnCreateClubRoom" width="165" height="75" left="10" verticalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_blue_s_png"/>
+				<e:Label text="创建房间" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="32" strokeColor="0x5D88DD" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+			</ns1:EButton>
+			<e:Label text="在线房间" size="32" fontFamily="Microsoft YaHei" stroke="3" strokeColor="0x76677c" height="39.33" verticalAlign="middle" textAlign="center" anchorOffsetX="0" width="200" anchorOffsetY="0" wordWrap="true" horizontalCenter="0" verticalCenter="0"/>
+			<e:CheckBox id="cbAllOnlineRooms" label="" width="65" height="65" verticalCenter="0" right="160"/>
+			<e:Label text="全部" size="28" fontFamily="Microsoft YaHei" stroke="2" strokeColor="0x4D4053" height="30" verticalAlign="middle" textAlign="left" anchorOffsetX="0" width="60" anchorOffsetY="0" wordWrap="true" verticalCenter="0" right="102"/>
+			<ns1:EButton id="btnRefresh" width="65" height="65" verticalCenter="0" right="10">
+				<ns1:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_refresh_png"/>
+					</e:Skin>
+				</ns1:skinName>
+			</ns1:EButton>
+		</e:Group>
+		<e:Label id="lablistOnlineRoomsNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="26" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="80"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="380" horizontalCenter="0" top="80" anchorOffsetY="0">
+			<e:List id="listOnlineRooms" itemRendererSkinName="ItemOnlineRoomSkin" width="100%" height="100%" horizontalCenter="-2" verticalCenter="0" >
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout horizontalAlign="justify" gap="10"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="grpAdminMenu" width="958.33" height="80" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" bottom="0" visible="false" locked="true">
+		<ns1:EButton id="btnAdminMembers" anchorOffsetX="0" left="50" verticalCenter="-10" width="90" height="85">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="club_menu_members_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnAdminAdv" anchorOffsetX="0"  width="90" height="85" verticalCenter="-10" horizontalCenter="-200">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="club_menu_adv_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnAdminGameConf" anchorOffsetX="0"  width="90" height="85" verticalCenter="-10" horizontalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="club_menu_games_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnAdminOfflineRooms" anchorOffsetX="0" verticalCenter="-10"  width="90" height="85" right="50">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="club_menu_score_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnAdminClubSetting" anchorOffsetX="0"  width="90" height="85" horizontalCenter="200" verticalCenter="-10">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="club_menu_setting_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+	<e:Group id="grpMemberMenu" width="874.33" height="80" anchorOffsetX="0" anchorOffsetY="0" bottom="-1" right="203" locked="true" visible="false">
+		<ns1:EButton id="btnMembers" anchorOffsetX="0" left="50" verticalCenter="-10" width="90" height="85">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="club_menu_members_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnOfflineRooms" anchorOffsetX="0" verticalCenter="-10" width="90" height="85" horizontalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="club_menu_score_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnClubme" anchorOffsetX="0" verticalCenter="-10" width="90" height="85" right="50">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="club_menu_me_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+</e:Skin>

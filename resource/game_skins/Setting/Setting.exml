@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SettingSkin" width="550" height="400" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_s_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0" locked="true"/>
+	<e:Image width="75" height="45" source="txt_title_setting_png" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" top="25" scaleX="0.8" scaleY="0.8"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="15" left="20">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="15" right="20">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Group id="grpSetting" width="90%" height="280"  anchorOffsetY="0" horizontalCenter="0" top="85">
+ 		<e:Group  width="45%" height="50" top="30" left="10">
+		 	<e:Label text="音乐:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<ns1:CToggleSwitch id="btnMusicBg" skinName="CToggleSwitchSkin" verticalCenter="0" left="100"/>
+		</e:Group>
+		<e:Group width="45%" height="50" y="30" right="10">
+			<e:Label text="音效:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<ns1:CToggleSwitch id="btnMusicEffect" skinName="CToggleSwitchSkin" verticalCenter="0" left="100"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

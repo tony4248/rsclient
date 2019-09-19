@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KeFuSkin" width="550" height="400" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_s_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Image width="75" height="45" source="txt_title_kefu_png" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" top="25" scaleX="0.8" scaleY="0.8"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="15" left="20">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="15" right="20">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Group id="grpKeFu" width="90%" height="280"  anchorOffsetY="0" horizontalCenter="0.5" top="85">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376"/>
+ 		<e:Label id="labKefu" text="7*24小时美女客服在线为你服务，客服微信:xxxxxx" textColor="0xF9F5E8" fontFamily="Microsoft YaHei" size="24"
+	         anchorOffsetX="0" width="490" lineSpacing="5"  anchorOffsetY="0" height="220"/>
+		<ns1:EButton id="btnOK" width="145" height="60" horizontalCenter="0" bottom="20">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_call_png"/>
+			<e:Label text="确定" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="24" strokeColor="0x1B8E15" stroke="3" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+		</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+</e:Skin>

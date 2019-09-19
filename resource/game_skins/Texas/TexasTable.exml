@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TexasTableSkin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source="texastable_png" left="-1" top="0" right="1" bottom="0" scale9Grid="246,212,485,248" locked="true"/>
+	<e:Group id="grpLeftTop" width="430.67" height="75"  anchorOffsetY="0" anchorOffsetX="0" top="10" left="10" locked="true">
+		<ns1:EButton id="btnGoBack" width="75" height="75" top="0" left="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_back_png"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnScores" left="100" verticalCenter="0" width="75" anchorOffsetY="0" height="75">
+				<ns1:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_scores_png"/>
+					</e:Skin>
+				</ns1:skinName>
+		</ns1:EButton>
+		<e:Group id="grpEntityId" height="50"  anchorOffsetY="0" anchorOffsetX="0" left="200" width="230" top="0">
+			<e:Image width="140" height="45" source="txt_bg_png" verticalCenter="0" left="90"/>
+			<e:Label text="房间号:" fontFamily="微软雅黑" textAlign="left" width="90" size="24"  height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xcec7b3" bold="true" verticalCenter="0.5" left="10"/>
+			<e:Label id="labEntityId" text="803832" fontFamily="微软雅黑" textAlign="left" width="130" size="26" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xf4ba0c" stroke="3" bold="true" verticalCenter="0" left="100"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="grpSetting" width="201.33" height="75" anchorOffsetY="0" right="10" top="10" anchorOffsetX="0">
+		<ns1:EButton id="btnEnableHost" width="75" anchorOffsetY="0" height="75" verticalCenter="0.5" left="10">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_host_png"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnSetting" right="10" verticalCenter="0" width="75" anchorOffsetY="0" height="75">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="menu_setting_png"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>	
+	</e:Group>	
+	<e:Label id="labRoundNums" text="局数:9/15" size="18" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" horizontalCenter="0" verticalAlign="middle" textAlign="center" bold="true" stroke="3" strokeColor="0x2b7b7a" top="200" locked="true"/>
+	<e:Group id="grpBoardPokers" anchorOffsetX="0" anchorOffsetY="0" width="360" height="95" horizontalCenter="0" verticalCenter="0" locked="true" visible="false">
+		<e:Image source="poker_1_png" anchorOffsetX="0" anchorOffsetY="0" width="70" height="95" x="45" y="3"/>
+		<e:Image source="poker_1_png" anchorOffsetX="0" anchorOffsetY="0" width="70" height="95" horizontalCenter="-74.5" verticalCenter="-1.5"/>
+		<e:Image source="poker_1_png" anchorOffsetX="0" anchorOffsetY="0" width="70" height="95" x="177" y="0"/>
+		<e:Image source="poker_1_png" anchorOffsetX="0" anchorOffsetY="0" width="70" height="95" x="243" y="10"/>
+		<e:Image source="poker_1_png" anchorOffsetX="0" anchorOffsetY="0" width="70" height="95" x="313" y="20"/>
+	</e:Group>
+	<e:Group id="grpChipsNum_Seat1" height="35" anchorOffsetY="0" anchorOffsetX="0" width="91" horizontalCenter="0" bottom="200" locked="true">
+	</e:Group>
+	<e:Group id="grpChipsNum_Seat9" height="35" anchorOffsetY="0" anchorOffsetX="0" width="91" right="295" bottom="245" locked="true">
+	</e:Group>
+	<e:Group id="grpChipsNum_Seat8" height="35" anchorOffsetY="0" anchorOffsetX="0" top="400" right="205" width="91" locked="true">
+	</e:Group>
+	<e:Group id="grpChipsNum_Seat7" height="35" anchorOffsetY="0" anchorOffsetX="0" top="250" right="210" width="91" locked="true">
+	</e:Group>
+	<e:Group id="grpChipsNum_Seat6" height="35" anchorOffsetY="0" anchorOffsetX="0" top="200" right="255" width="91" locked="true">
+	</e:Group>
+	<e:Group id="grpChipsNum_Seat5" width="90" height="30" anchorOffsetY="0" anchorOffsetX="0" top="200" left="245" locked="true">
+	</e:Group>
+	<e:Group id="grpChipsNum_Seat4" height="35" anchorOffsetY="0" anchorOffsetX="0" top="250" width="91" left="210" locked="true">
+	</e:Group>
+	<e:Group id="grpChipsNum_Seat3" height="30" anchorOffsetY="0" anchorOffsetX="0" width="90" left="205" top="400" locked="true">
+	</e:Group>
+	<e:Group id="grpChipsNum_Seat2" height="30" anchorOffsetY="0" anchorOffsetX="0" width="90" bottom="245" left="295" locked="true">
+	</e:Group>
+	<e:Group id="grpPokers_Seat2" height="55" anchorOffsetY="0" anchorOffsetX="0" width="90" bottom="190" left="295" locked="true"/>
+	<e:Group id="grpPokers_Seat3" height="55" anchorOffsetY="0" anchorOffsetX="0" width="90" left="205" top="430" locked="true"/>
+	<e:Group id="grpPokers_Seat4" height="55" anchorOffsetY="0" anchorOffsetX="0" width="90" left="210" top="285" locked="true"/>
+	<e:Group id="grpPokers_Seat7" height="55" anchorOffsetY="0" anchorOffsetX="0" width="90" right="210" top="285" locked="true"/>
+	<e:Group id="grpPokers_Seat8" height="55" anchorOffsetY="0" anchorOffsetX="0" width="90" right="205" top="430" locked="true"/>
+	<e:Group id="grpPokers_Seat9" height="55" anchorOffsetY="0" anchorOffsetX="0" width="90" bottom="190" right="295" locked="true"/>
+	<e:Group id="grpPokers_Seat5" height="55" anchorOffsetY="0" anchorOffsetX="0" width="90" left="245" top="145" locked="true"/>
+	<e:Group id="grpPokers_Seat6" height="55" anchorOffsetY="0" anchorOffsetX="0" width="90" top="145" right="255" locked="true"/>
+	<e:Group id="grpPokerType_Seat2" height="23" anchorOffsetY="0" anchorOffsetX="0" width="90" bottom="190" left="295" locked="true"/>
+	<e:Group id="grpPokerType_Seat3" height="23" anchorOffsetY="0" anchorOffsetX="0" width="90" left="205" top="460" locked="true"/>
+	<e:Group id="grpPokerType_Seat4" height="23" anchorOffsetY="0" anchorOffsetX="0" width="90" left="210" top="317" locked="true"/>
+	<e:Group id="grpPokerType_Seat7" height="23" anchorOffsetY="0" anchorOffsetX="0" width="90" right="210" top="317" locked="true"/>
+	<e:Group id="grpPokerType_Seat8" height="23" anchorOffsetY="0" anchorOffsetX="0" width="90" right="205" top="460" locked="true"/>
+	<e:Group id="grpPokerType_Seat9" height="23" anchorOffsetY="0" anchorOffsetX="0" width="90" bottom="190" right="295" locked="true"/>
+	<e:Group id="grpPokerType_Seat5" height="23" anchorOffsetY="0" anchorOffsetX="0" width="90" left="245" top="180" locked="true"/>
+	<e:Group id="grpPokerType_Seat6" height="23" anchorOffsetY="0" anchorOffsetX="0" width="90" top="180" right="255" locked="true"/>
+	<e:Group id="grpProfile_Seat9" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" bottom="100" right="200" locked="true">
+	</e:Group>
+	<e:Group id="grpProfile_Seat8" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" top="400" right="10" locked="true">
+	</e:Group>
+	<e:Group id="grpProfile_Seat7" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" top="250" right="10" locked="true">
+	</e:Group>
+	<e:Group id="grpProfile_Seat6" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" top="55" right="210" locked="true">
+	</e:Group>
+	<e:Group id="grpProfile_Seat5" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" top="55" left="200" locked="true">
+	</e:Group>
+	<e:Group id="grpProfile_Seat4" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" left="10" top="250" locked="true">
+	</e:Group>
+	<e:Group id="grpProfile_Seat3" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" left="10" top="400" locked="true">
+	</e:Group>
+	<e:Group id="grpProfile_Seat2" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" bottom="100" left="200" locked="true">
+	</e:Group>
+	<e:Group id="grpProfile_Seat1" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" bottom="10" left="40" locked="true">
+	</e:Group>
+	<e:Group id="grpReadyAndInvite" width="520" height="130" horizontalCenter="-11.5" bottom="256" anchorOffsetX="0" locked="true">
+		<ns1:EButton id="btnReady" width="180" height="65"  x="5" y="25">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_raise_png"/>
+					<e:Label text="准备" textColor="0x282626" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0xf4cf13" stroke="1" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnGoMatching" width="180" height="65"  x="200" y="25">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_raise_png"/>
+					<e:Label text="开始匹配" textColor="0x282626" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0xf4cf13" stroke="1" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnInvite" width="180" height="65" x="400" y="25">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_raise_png"/>
+					<e:Label text="邀请好友" textColor="0x282626" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0xf4cf13" stroke="1" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+	<e:Group id="grpPutBetsControls" anchorOffsetX="0" anchorOffsetY="0" width="880" height="70" bottom="15" touchThrough="true" horizontalCenter="41.5" locked="true" visible="false">
+	</e:Group>
+	<e:Group id="grpVsliderPanel" width="100%" height="100%" y="0" horizontalCenter="0" locked="true" visible="false">
+		<e:Image id="imgGrpVsliderOuter" top="0" bottom="0" left="0" right="0" source="win_bg_png" fillMode="repeat"  locked="true"/>
+		<e:Group id="grpLeftBtns" width="686" height="70" bottom="15" right="351" anchorOffsetX="0" locked="true">
+		</e:Group>
+		<e:Group id="grpRightBtns" width="314.67" height="70" bottom="15" right="40" anchorOffsetX="0" locked="true">
+		</e:Group>
+		<e:Group id="grpVSlider" width="137" height="466" right="45" bottom="85" locked="true">
+			<e:VSlider id = "texasVSlider" width="137" height="466" anchorOffsetX="0" anchorOffsetY="0" skinName="TexasVSliderSkin" horizontalCenter="0" verticalCenter="0"/>
+			<e:Label id="labVSliderVal" size="28" text="100000" anchorOffsetX="0" textAlign="center" anchorOffsetY="0" height="35" verticalAlign="middle" bottom="411" left="19" width="110" bold="true"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="grpTimer" height="60" anchorOffsetY="0" anchorOffsetX="0" width="400" verticalCenter="0" horizontalCenter="0" touchThrough="true" locked="true">
+	</e:Group>
+	<e:Group id="grpPokers_Seat1" width="150" height="95" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0" bottom="100" locked="true">
+		<e:Image source="poker_1_png" anchorOffsetX="0" anchorOffsetY="0" width="70" height="95" y="6.76" right="3"/>
+		<e:Image source="poker_1_png" anchorOffsetX="0" anchorOffsetY="0" width="70" height="95" y="6.76" left="3"/>
+	</e:Group>
+	<e:Group id="grpPokerType_Seat1" width="150" height="30" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0" bottom="100"  locked="true"/>
+	<e:Group id="grpTexasPot" anchorOffsetX="0" anchorOffsetY="0" width="150" height="30" horizontalCenter="0" top="230" locked="true">
+		<e:Image source="pot_chips_png" anchorOffsetX="0" anchorOffsetY="0" width="148" height="26"  top="0" x="1"/>
+		<e:Label id="labPotNums" size="20" text="1938499" anchorOffsetX="0" width="95" textAlign="left" verticalAlign="middle" height="20" right="5" top="3" bold="true" textColor="0xc6b1c0"/>
+	</e:Group>
+	<e:Group id="grpTexasPots" anchorOffsetX="0" anchorOffsetY="0" width="350" height="45" horizontalCenter="0" top="230" locked="true" visible="false">
+	</e:Group>
+	<e:Group id="grpHost" height="100%" width="100%" bottom="0" right="0" left="0" locked="true" visible="false">
+		<e:Image id="imgHostBg" source="win_bg_png" fillMode="repeat" anchorOffsetX="0" bottom="0" left="0" right="0" top="0"/>
+		<ns1:EButton id="btnDisableHost" height="65" width="165" horizontalCenter="0" bottom="20">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_check_png"/>
+				<e:Label text="取消托管" size="26" bold="false" textColor="0xFFFFFF" fontFamily="微软雅黑" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+	<e:Group id="grpDeck" anchorOffsetX="0" anchorOffsetY="0" width="20" height="20" horizontalCenter="0" top="170" locked="true" visible="false">
+	</e:Group>
+	<e:Group id="grpSystemMessage" width="600" height="45" horizontalCenter="0" verticalCenter="-100" touchThrough="true" locked="true"/>
+</e:Skin>

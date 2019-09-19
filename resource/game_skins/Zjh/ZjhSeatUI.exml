@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ZjhSeatUISkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  height="90" width="195">
+	<e:Image width="195" height="90" anchorOffsetX="0" anchorOffsetY="0" source="avatar_hb_s_png" bottom="0" left="0" locked="true"/>
+	<e:Image id="imgWinner" width="195" height="90" anchorOffsetX="0" anchorOffsetY="0" source="hprofile_winner_png" locked="true"/>
+	<e:Image id="imgAvatar" width="78" height="78" anchorOffsetX="0" anchorOffsetY="0" source="avatar_man_png" verticalCenter="-3" horizontalCenter="-54.5" locked="true"/>
+	<e:Label id="labName" size="18" text="会飞的猪头肉" anchorOffsetX="0" width="120" textAlign="center" height="30" verticalAlign="middle" bottom="35" right="0" locked="true"/>
+	<e:Label id="labChips" size="18" text="10000" anchorOffsetX="0" width="120" textAlign="center" anchorOffsetY="0" height="30" verticalAlign="middle" bottom="5" right="0" locked="true"/>
+	<e:Image id="imgButtonSeat" width="35" height="35" anchorOffsetX="0" anchorOffsetY="0" source="dealer_s_png" left="25" bottom="5" locked="true"/>
+	<e:Image id="imgUserReady" width="30" height="30" anchorOffsetX="0" anchorOffsetY="0" source="user_ready_png" left="30" bottom="5" visible="false" locked="true"/>
+	<e:Label id="labLastAction" text="不抢" fontFamily="Microsoft YaHei" height="20" width="120" top="0" right="0" size="18" anchorOffsetY="0" textAlign="center" bold="true" textColor="0xf4d66e" verticalAlign="middle" locked="true"/>
+	<e:Image id="imgProfileTimingBG" width="195" height="90" anchorOffsetX="0" anchorOffsetY="0" source="hprofile_bg_timing_png"  locked="true" visible="false"/>
+</e:Skin>

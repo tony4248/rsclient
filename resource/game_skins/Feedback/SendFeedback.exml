@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SendFeedbackSkin" width="600" height="500" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_info_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0"  scale9Grid="96,72,580,433" locked="true"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="10" left="10" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="8" right="10" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Image id="imgWinTitle" source="txt_title_feedback_png" horizontalCenter="0" top="20"/>
+	<e:Group id="grpSendFeedback" width="500" height="400" anchorOffsetX="0" anchorOffsetY="0" top="60" horizontalCenter="0">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376" locked="true"/>
+		<e:TextInput id="txtTitle" prompt="标题" width="400" height="45" horizontalCenter="0" top="40"/>
+		<e:Label text="标题,不超过30个字符" fontFamily="微软雅黑" textAlign="center" width="420" size="20"  height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xcec7b3" horizontalCenter="0" top="85"/>
+		<e:Group width="400" height="145"  horizontalCenter="0" anchorOffsetY="0" top="135">
+			<e:Image width="100%" height="100%" scale9Grid="3,3,8,8" source="input_png"/>
+			<e:EditableText id="txtContent"  prompt="具体内容" textColor="0x000000" width="100%" height="100%" text="" fontFamily="Microsoft YaHei" size="22" multiline="true" wordWrap="true" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<ns1:EButton id="btnSendFeedback" width="145" height="60" horizontalCenter="0" bottom="20">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="提交反馈" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="24" strokeColor="0x1B8E15" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+</e:Skin>

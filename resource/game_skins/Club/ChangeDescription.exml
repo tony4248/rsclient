@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChangeDescriptionSkin" width="550" height="400" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_s_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0" locked="true"/>
+	<e:Image width="75" height="45" source="txt_title_adv_png" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" top="25" scaleX="0.8" scaleY="0.8"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="15" left="20">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="15" right="20">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Group id="grpChangeDescription" width="90%" height="296"  horizontalCenter="0.5" verticalCenter="29" anchorOffsetY="0">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376" locked="true"/>
+		<e:Group width="400" height="150"  horizontalCenter="0" anchorOffsetY="0" top="10">
+			<e:Image width="100%" height="100%" scale9Grid="3,3,8,8" source="input_png"/>
+			<e:EditableText id="txtClubDescription" textColor="0x000000" width="100%" height="100%" text="" y="2" fontFamily="Microsoft YaHei" size="24" multiline="true" wordWrap="true"/>
+		</e:Group>
+		<e:Label text="俱乐部公告,2-150个字" fontFamily="微软雅黑" textAlign="center" width="420" size="20"  height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xcec7b3" horizontalCenter="4.5" top="160"/>
+		<ns1:EButton id="btnChangeDescription" width="165" height="60" bottom="30" horizontalCenter="5">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="保存" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="24" strokeColor="0x1B8E15" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+
+</e:Skin>

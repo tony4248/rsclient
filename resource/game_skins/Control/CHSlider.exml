@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CHSliderSkin" minWidth="100" minHeight="40" xmlns:e="http://ns.egret.com/eui" height="40">
+    <e:Image source="hslider_bg_png" horizontalCenter="0"  alpha="0.7"  width="400" height="25" verticalCenter="0"/>
+    <e:Image id="track" source="hslider_bar_png" width="400" height="25" horizontalCenter="0" verticalCenter="0"/>
+    <e:Image id="thumb" source="slider_btn_png" width="40" height="40" horizontalCenter="0"  verticalCenter="0" />
+</e:Skin>

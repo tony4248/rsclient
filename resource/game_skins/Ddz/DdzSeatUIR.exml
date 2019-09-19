@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DdzSeatUIRSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  width="185" height="210">
+	<e:Image width="115" height="170" anchorOffsetX="0" anchorOffsetY="0" source="avatar_v_s_png" right="0" bottom="0" locked="true"/>
+	<e:Image id="imgAvatar" width="90" height="90" anchorOffsetX="0" anchorOffsetY="0" source="avatar_man_png" horizontalCenter="34.5" verticalCenter="-17" locked="true"/>
+	<e:Image id="imgWinner" width="115" height="173" source="vprofile_winner_png" right="0" bottom="0" scaleX="1" locked="true"/>
+	<e:Image id="imgPokersNumBG" height="50" anchorOffsetX="0" anchorOffsetY="0" source="poker_0_png" width="40" bottom="0" left="15" locked="true"/>
+	<e:Label id="labName" size="18" text="会飞的猪头肉" anchorOffsetX="0" width="114" textAlign="center" top="145" anchorOffsetY="0" height="23" verticalAlign="middle" right="0" locked="true"/>
+	<e:Label id="labScore" size="18" text="10000" anchorOffsetX="0" width="104" textAlign="center" anchorOffsetY="0" height="22" verticalAlign="middle" bottom="10" right="0" locked="true"/>
+	<e:Image id="imgLandlord" width="40" height="40" anchorOffsetX="0" anchorOffsetY="0" source="landlord_png" top="0" right="38" locked="true"/>
+	<e:Label id="labPokersNum" text="" size="20" width="40" textAlign="center" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" height="30" fontFamily="Microsoft YaHei" stroke="3" strokeColor="0x2b94de" bold="true" left="15" bottom="10" locked="true"/>
+	<e:Group id="grpTimer" width="75" height="75" top="0" anchorOffsetX="0" anchorOffsetY="0" left="0" locked="true">
+		<e:Image width="75" height="75" source="timer_png" anchorOffsetX="0" anchorOffsetY="0" left="0" top="0"/>
+	</e:Group>
+	<e:Image id="imgUserReady" width="30" height="30" anchorOffsetX="0" anchorOffsetY="0" source="user_ready_png" top="100" right="43" locked="true"/>
+</e:Skin>

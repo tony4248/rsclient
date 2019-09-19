@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ItemProductSkin" width="200" height="220" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Image source="shop_item_bg_png"  left="0" top="0" anchorOffsetX="0" anchorOffsetY="0"  width="100%" height="100%"/>
+	<e:Image id="imgProd" source="wexin_icon_png" width="80" height="78" anchorOffsetX="0" anchorOffsetY="0" top="10" horizontalCenter="0"/>
+	<e:Label id="labProdName" text="吹风机" fontFamily="微软雅黑" textAlign="center" width="100%" size="22" height="35" verticalAlign="middle" anchorOffsetX="0" bold="true" left="0" textColor="0xe8e8e8" top="85"/>
+	<e:Label text="数量:" fontFamily="微软雅黑" textAlign="right" width="57" size="20" height="30" verticalAlign="middle" anchorOffsetX="0" textColor="0xE8E8E8" horizontalCenter="-30" top="120"/>
+	<e:Label id="labProdQty" text=" 200" fontFamily="微软雅黑" textAlign="left" width="80" size="20" height="30" verticalAlign="middle" anchorOffsetX="0" textColor="0xe8e8e8" top="120" horizontalCenter="40"/>
+	<ns1:EButton id="btnAction" width="145" height="45"  top="160" horizontalCenter="0">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_yellow_s_png"/>
+			<e:Label id="labPrice" text="300" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="20" strokeColor="0xfc9f3a" stroke="3" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+</e:Skin>

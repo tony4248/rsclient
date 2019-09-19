@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ItemUserRslSkin" width="620" height="35" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Image id="img_dialog_outer" top="0" bottom="0" left="0" right="0" source="win_bg_png" fillMode="repeat" />
+	<e:Label text="ID:" fontFamily="微软雅黑" textAlign="left" width="31" size="20" height="35" verticalAlign="middle" left="10" anchorOffsetX="0" top="0" textColor="0xEDBE31"/>
+	<e:Label id="labUserId" text="2123121" fontFamily="微软雅黑" textAlign="left" width="94" size="20" height="35" verticalAlign="middle" textColor="0xF9F5E8" left="40" anchorOffsetX="0" top="0"/>
+	<e:Label text="庄位:" fontFamily="微软雅黑" textAlign="left" width="60" size="20" height="35" verticalAlign="middle" left="140" anchorOffsetX="0" top="0" textColor="0xedbe31"/>
+	<e:Label id="labDealer" text="是" fontFamily="微软雅黑" textAlign="left" width="48" size="20" height="35" verticalAlign="middle" textColor="0xF9F5E8" left="200" anchorOffsetX="0" top="0"/>
+	<e:Label text="座位号:" fontFamily="微软雅黑" textAlign="left" width="76" size="20" height="35" verticalAlign="middle" left="240" anchorOffsetX="0" top="0" textColor="0xEDBE31"/>
+	<e:Label id="labSeatNo" text="10" fontFamily="微软雅黑" textAlign="left" width="41" size="20" height="35" verticalAlign="middle" textColor="0xF9F5E8" left="310" anchorOffsetX="0" top="0"/>
+	<e:Label text="得分:" fontFamily="微软雅黑" textAlign="left" width="60" size="20" height="35" verticalAlign="middle" left="360" top="0" anchorOffsetX="0" textColor="0xEDBE31" anchorOffsetY="0"/>
+	<e:Label id="labAwarded" text="+3000" fontFamily="微软雅黑" textAlign="left" width="100" size="20" height="35" verticalAlign="middle" top="0" anchorOffsetX="0" left="420" bold="true" textColor="0x1F7F0E" stroke="1" strokeColor="0x4BE22F"/>
+	<e:Label text="赢:" fontFamily="微软雅黑" textAlign="left" width="38" size="20" height="35" verticalAlign="middle" left="520" anchorOffsetX="0" top="0" textColor="0xEDBE31"/>
+	<e:Label id="labWin" text="是" fontFamily="微软雅黑" textAlign="left" width="53" size="22" height="35" verticalAlign="middle" left="560" anchorOffsetX="0" top="0" textColor="0x1f7f0e" strokeColor="0x1f7f0e" stroke="0"/>
+	<e:Image source="white_dot_png" horizontalCenter="0" width="100%" bottom="0"/>
+</e:Skin>

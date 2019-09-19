@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TexasVSliderSkin" minWidth="25" minHeight="30" xmlns:e="http://ns.egret.com/eui">
+    <e:Image source="vslide_bg_png" horizontalCenter="0"  alpha="0.7"  width="137" height="466"/>
+    <e:Image id="track" source="vslide_track_filled_png" width="35" height="400" horizontalCenter="5" anchorOffsetY="0" y="55" anchorOffsetX="0"/>
+    <e:Image id="thumb" source="vslide_thumb_png" horizontalCenter="5"  verticalCenter="0" y="0"/>
+</e:Skin>

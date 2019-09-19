@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameConfsSkin" width="650" height="500" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_m_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0" locked="true"/>
+	<e:Image width="75" height="45" source="txt_title_games_png" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" top="25" scaleX="0.8" scaleY="0.8" locked="true"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="10" left="20" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="10" right="20" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Group id="grpGameConfs" width="620" height="80%"  horizontalCenter="0" anchorOffsetY="0" bottom="20">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376"/>
+		<e:Group width="100%" height="50" top="0" horizontalCenter="0">
+			<ns1:EButton id="btnShowCGCWin" width="160" height="55" left="10" verticalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_blue_s_png"/>
+				<e:Label text="设置新玩法" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0x5D88DD" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+			</ns1:EButton>
+			<e:Label text="设置的玩法" size="24" fontFamily="Microsoft YaHei" stroke="2" strokeColor="0x4D4053" height="30" verticalAlign="middle" textAlign="center" anchorOffsetX="0" width="200" anchorOffsetY="0" wordWrap="true" horizontalCenter="0" verticalCenter="0"/>
+			<ns1:EButton id="btnRefresh" width="50" height="50" verticalCenter="0" right="10">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_refresh_png"/>
+				</e:Skin>
+			</ns1:skinName>
+			</ns1:EButton>
+		</e:Group>
+		<e:Label id="labListNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="50" locked="true"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="260" horizontalCenter="0" top="50" anchorOffsetY="0" locked="true">
+			<e:List id="listGameConfs" itemRendererSkinName="ItemGameConfSkin" width="100%" height="100%" horizontalCenter="0" verticalCenter="-12.5"  anchorOffsetY="0">
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout gap="3" paddingLeft="5" paddingRight="5" horizontalAlign="justify" verticalAlign="justify"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Label text="提示：每个俱乐部支持3种玩法" fontFamily="微软雅黑" textAlign="center" width="420" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="320" locked="true"/>
+	</e:Group>
+
+</e:Skin>

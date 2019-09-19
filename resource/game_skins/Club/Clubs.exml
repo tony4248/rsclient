@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ClubsSkin" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_b_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="92,87,744,449" locked="true"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="20" left="20" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="20" right="20" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Image id="imgWinTitle" source="txt_title_club_png" horizontalCenter="0" top="25" locked="true"/>
+	<e:Group id="grpTabMenu" anchorOffsetY="0" top="90" width="200" left="20" height="480"  locked="true">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0"/>
+		<e:Group id="grpTabBtns" anchorOffsetY="0" width="200" height="360"  horizontalCenter="0" top="0">
+			<e:RadioButton groupName="tabClubBtns" id="clubRadioBtn" label="俱乐部" skinName="CRadioButtonSkin" value="0" selected="true" horizontalCenter="0"/>
+			<e:RadioButton groupName="tabClubBtns" label="我创建的" skinName="CRadioButtonSkin" value="1" horizontalCenter="0"/>
+			<e:RadioButton groupName="tabClubBtns" label="我加入的" skinName="CRadioButtonSkin" value="2" horizontalCenter="0"/>
+			<e:RadioButton groupName="tabClubBtns" label="我的申请" skinName="CRadioButtonSkin" value="3" horizontalCenter="0"/>
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="20"/>
+			</e:layout>
+		</e:Group>
+		<e:Group width="100%" height="70" top="360" horizontalCenter="0">
+			<ns1:EButton id="btnShowCCWin" width="175" height="65" bottom="0" horizontalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="创建俱乐部" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="24" strokeColor="0x1B8E15" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+			</ns1:EButton>
+			<e:layout>
+			<e:VerticalLayout gap="5" horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="grpClubs" anchorOffsetY="0" top="90" width="620" height="480"  left="240" locked="true">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376" locked="true"/>
+		<e:ViewStack id="vsClubs" width="100%" height="100%" anchorOffsetX="0" anchorOffsetY="0">
+		</e:ViewStack>
+	</e:Group>
+	<e:Group id="grpAllClubs" width="620" height="480"  top="90"  left="240" locked="true">
+		<e:Group width="100%" height="50"  top="0"  horizontalCenter="0">
+			<e:Group width="60%" height="100%"  top="0"  left="0">
+				<e:TextInput id="txtClubId" prompt="俱乐部ID" width="150" height="40" left="10" verticalCenter="0"/>
+				<ns1:EButton id="btnJoinClub" width="130" height="55"  left="180" verticalCenter="0">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_blue_s_png"/>
+						<e:Label text="快速加入" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0x5D88DD" stroke="3" textAlign="center" verticalAlign="middle"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+				<ns1:EButton id="btnRefresh" width="40" height="40"  left="320" verticalCenter="0">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_refresh_png"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+			</e:Group>
+			<e:Group width="40%" height="100%"  top="0"  right="0">
+				<e:Image source="numbers_bg_png" anchorOffsetY="0" height="45" anchorOffsetX="0" width="200" scale9Grid="21,8,131,17" verticalCenter="0" right="30"/>
+				<ns1:EButton id="btnPageUp" width="40" height="40"  verticalCenter="0" right="200">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="page_up_png"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+				<e:Label id="labPagesNum" text="133/1300" textColor="0xFFFFFF" bold="true" fontFamily="Microsoft YaHei" size="22" strokeColor="0x404142" stroke="3" textAlign="center" verticalAlign="middle" height="35" width="150" verticalCenter="0" right="50"/>
+				<ns1:EButton id="btnPageDown" width="40" height="40"  right="10" verticalCenter="0">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="page_down_png"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+			</e:Group>
+		</e:Group>
+		<e:Label id="lablistAllClubsNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="50" locked="true"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="430" horizontalCenter="0" top="50" locked="true">
+			<e:List id="listAllClubs" itemRendererSkinName="ItemClubSkin" width="100%" height="100%" horizontalCenter="-2" verticalCenter="0" >
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout gap="3" paddingLeft="5" paddingRight="5" horizontalAlign="justify" verticalAlign="justify"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="grpMyClubs" width="620" height="480"  top="90"  left="240" locked="true" visible="false">
+		<e:Label id="lablistMyClubsNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="0" locked="true"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="100%" horizontalCenter="0" verticalCenter="0">
+			<e:List id="listMyClubs" itemRendererSkinName="ItemClubSkin" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" >
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout gap="3" paddingLeft="5" paddingRight="5" horizontalAlign="justify" verticalAlign="justify"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="grpJoinedClubs" width="620" height="480"  top="90"  left="240" locked="true" visible="false">
+		<e:Label id="lablistJoinedClubsNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="0" locked="true"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="100%" horizontalCenter="0" verticalCenter="0">
+			<e:List id="listJoinedClubs" itemRendererSkinName="ItemClubSkin" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" >
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout gap="3" paddingLeft="5" paddingRight="5" horizontalAlign="justify" verticalAlign="justify"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="grpAppliedClubs" width="620" height="480"  top="90"  left="240" locked="true" visible="false">
+		<e:Label id="lablistMyAppliedClubsNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="0" locked="true"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="100%" horizontalCenter="0" verticalCenter="0">
+			<e:List id="listMyAppliedClubs" itemRendererSkinName="ItemClubSkin" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" >
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout gap="3" paddingLeft="5" paddingRight="5" horizontalAlign="justify" verticalAlign="justify"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

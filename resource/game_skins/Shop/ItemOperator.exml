@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ItemOperatorSkin" width="300" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Image source="shop_item_bg_png"  left="0" top="0" anchorOffsetX="0" anchorOffsetY="0"  width="100%" height="100%"/>
+	<e:Image id="imgOperatorType" source="wexin_icon_png" width="80" height="78" anchorOffsetX="0" anchorOffsetY="0" left="10" verticalCenter="0"/>
+	<e:Label id="labOperatorId" text="394383424242" fontFamily="微软雅黑" textAlign="center" width="205" size="22" height="35" verticalAlign="middle" anchorOffsetX="0" bold="true" verticalCenter="0" left="90" textColor="0xe8e8e8"/>
+</e:Skin>

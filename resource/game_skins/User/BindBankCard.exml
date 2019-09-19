@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BindBankCardSkin" width="600" height="500" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_info_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0"  scale9Grid="96,72,580,433" locked="true"/>
+	<e:Image width="515" height="126" source="win_title_red_bg_png" horizontalCenter="0" anchorOffsetX="0" anchorOffsetY="0"  top="-30"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="10" left="10" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="8" right="10" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Image id="imgWinTitle" source="txt_title_bind_bank_card_png" horizontalCenter="0" top="10"/>
+	<e:Group id="grpBindBankCard" width="500" height="380" anchorOffsetX="0" anchorOffsetY="0" top="80" horizontalCenter="0">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376" locked="true"/>
+		<e:TextInput id="txtAccount" prompt="账号名称" width="380" height="45" top="20" horizontalCenter="0"/>
+		<e:Label text="账号名称, 真实的账号姓名" fontFamily="微软雅黑" textAlign="center" width="450" size="20"  height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xcec7b3" top="70" horizontalCenter="0"/>
+		<e:TextInput id="txtBandCardNo" prompt="银行卡卡号" width="380" height="45" top="120" horizontalCenter="0"/>
+		<e:Label text="银行卡卡号, 真实的银行卡卡号" fontFamily="微软雅黑" textAlign="center" width="450" size="20"  height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xcec7b3" top="170" horizontalCenter="0"/>
+		<e:TextInput id="txtBankName" prompt="开户行名称" width="380" height="45" anchorOffsetX="0" horizontalCenter="0" top="220"/>
+		<e:Label text="开户行名称,请输入较为详细的开户行名称" fontFamily="微软雅黑" textAlign="center" width="450" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" top="270" horizontalCenter="0"/>
+		<ns1:EButton id="btnBindPayment" width="145" top="320" height="50" horizontalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="绑定" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="24" strokeColor="0x1B8E15" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+</e:Skin>

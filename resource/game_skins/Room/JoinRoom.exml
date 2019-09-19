@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="JoinRoomSkin" width="650" height="550" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_info_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0"  scale9Grid="96,72,580,433" locked="true"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="10" left="10" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="8" right="10" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Image id="imgWinTitle" source="txt_title_joinroom_png" horizontalCenter="0" top="20"/>
+	<e:Group id="grpJoinRoom" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-13" verticalCenter="20" width="528" height="455">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376"/>
+		<e:Group id="ebtn_group_number" width="403.66" height="350.24" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" top="110">
+		<ns1:EButton y="9" anchorOffsetX="0" width="134" anchorOffsetY="0" height="78" left="0" label="1" name="1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</ns1:EButton>
+		<ns1:EButton y="170" anchorOffsetX="0" width="134" anchorOffsetY="0" height="78" left="268" x="10" name="9">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="9_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</ns1:EButton>
+		<ns1:EButton y="171.33" anchorOffsetX="0" width="134" anchorOffsetY="0" height="78" left="134" x="20" name="8">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="8_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</ns1:EButton>
+		<ns1:EButton y="90" anchorOffsetX="0" width="134" anchorOffsetY="0" height="78" left="0" x="30" name="4">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="4_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</ns1:EButton>
+		<ns1:EButton y="171" anchorOffsetX="0" width="134" anchorOffsetY="0" height="78" left="0" x="40" name="7">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="7_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</ns1:EButton>
+		<ns1:EButton y="89" anchorOffsetX="0" width="134" anchorOffsetY="0" height="78" left="134" x="50" name="5">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="5_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</ns1:EButton>
+		<ns1:EButton y="89" anchorOffsetX="0" width="134" anchorOffsetY="0" height="78" left="268" x="60" name="6">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="6_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</ns1:EButton>
+		<ns1:EButton y="10" anchorOffsetX="0" width="134" anchorOffsetY="0" height="78" left="268" x="70" name="3">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="3_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</ns1:EButton>
+		<ns1:EButton y="10" anchorOffsetX="0" width="134" anchorOffsetY="0" height="78" left="134" x="80" label="2" name="2">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="2_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</ns1:EButton>
+		<ns1:EButton x="134" y="256.12" width="134" height="78" name="0">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="0_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton x="268" y="255.12" name="del2" width="134" height="78">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="retype_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton x="0" y="255.12" name="del1" width="134" height="78">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="delete_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		</e:Group>
+		<e:Group width="497.39" height="116.18" y="3.91" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="4.5" locked="true">
+			<e:Group width="74" height="74" x="16" verticalCenter="0">
+				<e:Image left="0" right="0" source="circle_png" verticalCenter="0"/>
+				<e:Label id="lb0" verticalCenter="0" horizontalCenter="0" textColor="0xdd1a1a" text="-"/>
+			</e:Group>
+			<e:Group width="74" height="74" x="100" verticalCenter="0">
+				<e:Image left="0" right="0" source="circle_png" verticalCenter="0"/>
+				<e:Label id="lb1" text="-" verticalCenter="0" horizontalCenter="0" textColor="0xDD1A1A"/>
+			</e:Group>
+			<e:Group width="74" height="74" x="180" verticalCenter="0">
+				<e:Image left="0" right="0" source="circle_png" verticalCenter="0"/>
+				<e:Label id="lb2" text="-" verticalCenter="0" horizontalCenter="0" textColor="0xDD1A1A"/>
+			</e:Group>
+			<e:Group width="74" height="74" x="260" verticalCenter="0">
+				<e:Image left="0" right="0" source="circle_png" verticalCenter="0"/>
+				<e:Label id="lb3" text="-" verticalCenter="0" horizontalCenter="0" textColor="0xDD1A1A"/>
+			</e:Group>
+			<e:Group width="74" height="74" x="340" verticalCenter="0">
+				<e:Image left="0" right="0" source="circle_png" verticalCenter="0"/>
+				<e:Label id="lb4" text="-" verticalCenter="0" horizontalCenter="0" textColor="0xDD1A1A"/>
+			</e:Group>
+            <e:Group width="74" height="74" x="420" verticalCenter="0">
+				<e:Image left="0" right="0" source="circle_png" verticalCenter="0"/>
+				<e:Label id="lb5" text="-" verticalCenter="0" horizontalCenter="0" textColor="0xDD1A1A"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

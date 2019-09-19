@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ItemGameConfSkin" width="620" height="70" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Image id="img_dialog_outer" top="0" bottom="0" left="0" right="0" source="win_bg_png" fillMode="repeat"  locked="true"/>
+	<e:Image source="game_conf_icon_png" left="0" verticalCenter="0" width="60" height="60" locked="true"/>
+	<e:Label id="lab1stTips" text="底分/小盲注" fontFamily="微软雅黑" textAlign="left" width="110" size="20" height="35" verticalAlign="middle" left="70" anchorOffsetX="0" top="0" textColor="0xedbe31" locked="true"/>
+	<e:Label id="labBottomScore" text="5" fontFamily="微软雅黑" size="22" width="50" textAlign="center" left="180" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xf9f5e8" top="0" locked="true"/>
+	<e:Label text="最小带入:" fontFamily="微软雅黑" textAlign="left" width="90" size="20" height="35" verticalAlign="middle" left="140" anchorOffsetX="0" top="35" textColor="0xedbe31" locked="true"/>
+	<e:Label id="labMinChips" text="2000" fontFamily="微软雅黑" textAlign="left" width="60" size="20" height="35" verticalAlign="middle" textColor="0xF9F5E8" left="240" anchorOffsetX="0" top="35" locked="true"/>
+	<e:Label text="最大带入:" fontFamily="微软雅黑" textAlign="left" width="90" size="20"  height="35" verticalAlign="middle" left="300" top="35" anchorOffsetX="0" textColor="0xedbe31" locked="true"/>
+	<e:Label id="labMaxChips" text="3000" fontFamily="微软雅黑" textAlign="left" width="80" size="20"  height="35" verticalAlign="middle" left="400" textColor="0xf9f5e8" top="35" anchorOffsetX="0" locked="true"/>
+	<e:Image left="70" width="25" height="25" top="40" source="club_members_png" locked="true"/>
+	<e:Label id="labCapacity" text="10" fontFamily="微软雅黑" textAlign="left" width="40" size="18"  height="35" verticalAlign="middle" textColor="0xf9f5e8" top="35" anchorOffsetX="0" left="100" locked="true"/>
+	<e:Label id="labRounds" text="10" fontFamily="微软雅黑" textAlign="left" width="40" size="18" height="35" verticalAlign="middle" textColor="0xF9F5E8" top="0" anchorOffsetX="0" left="300" locked="true"/>
+	<e:Label text="局数:" fontFamily="微软雅黑" textAlign="left" width="50" size="18"  height="35" verticalAlign="middle" top="0" anchorOffsetX="0" left="250" textColor="0xedbe31" locked="true"/>
+	<ns1:EButton id="btnAction" width="130" height="60"  right="10" verticalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_yellow_s_png"/>
+				<e:Label text="删除" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0xfc9f3a" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+	</ns1:EButton>
+	<e:Image source="white_dot_png" horizontalCenter="0" width="100%" bottom="0" locked="true"/>
+</e:Skin>

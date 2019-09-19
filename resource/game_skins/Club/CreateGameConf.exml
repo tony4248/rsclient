@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CreateGameConfSkin" width="700" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_m_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="96,84,578,420"/>
+	<e:Image id="imgWinTitle" source="txt_title_games_png" horizontalCenter="0" top="25" locked="true"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="15" left="20" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="15" right="20" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Group id="" width="600" height="480"   horizontalCenter="0" top="80" locked="true" visible="true">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376"/>
+	</e:Group>
+	<e:Group id="grpCreateDdzRoom" width="600" height="480"   horizontalCenter="0" top="80" locked="true" visible="false">
+		 <e:Group  width="100%" height="50" top="10">
+		 	<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+		 	<e:Label text="底分:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:RadioButton groupName="ddzBottomOpts" id="ddzBottomOpt1" label="1" skinName="TRadioButtonSkin" selected="true" verticalCenter="0" left="115"/>
+			<e:RadioButton groupName="ddzBottomOpts" id="ddzBottomOpt2" label="2" skinName="TRadioButtonSkin" selected="false" left="255" verticalCenter="0"/>
+			<e:RadioButton groupName="ddzBottomOpts" id="ddzBottomOpt3" label="3" skinName="TRadioButtonSkin" selected="false" verticalCenter="0" left="390"/>
+		</e:Group>
+		<e:Group width="100%" height="50" top="80">
+			<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+			<e:Label text="局数:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:RadioButton groupName="ddzRoundsOpts" id="ddzRoundsOpt1" label="3" skinName="TRadioButtonSkin" selected="true" verticalCenter="0" left="115"/>
+			<e:RadioButton groupName="ddzRoundsOpts" id="ddzRoundsOpt2" label="4" skinName="TRadioButtonSkin" selected="false" left="255" verticalCenter="0"/>
+			<e:RadioButton groupName="ddzRoundsOpts" id="ddzRoundsOpt3" label="5" skinName="TRadioButtonSkin" selected="false" verticalCenter="0" left="390"/>
+		</e:Group>
+		<e:Group width="100%" height="50" top="150">
+			<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+			<e:Label text="起始分:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:RadioButton groupName="ddzMinChipsOpts" id="ddzMinChipsOpt1" label="5" skinName="TRadioButtonSkin" selected="true" verticalCenter="0" left="115"/>
+			<e:RadioButton groupName="ddzMinChipsOpts" id="ddzMinChipsOpt2" label="10" skinName="TRadioButtonSkin" selected="false" left="255" verticalCenter="0"/>
+			<e:RadioButton groupName="ddzMinChipsOpts" id="ddzMinChipsOpt3" label="20" skinName="TRadioButtonSkin" selected="false" verticalCenter="0" left="390"/>
+		</e:Group>
+		<ns1:EButton id="btnCreateDdzRoom" width="160" height="57"  bottom="20" horizontalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_check_png"/>
+				<e:Label text="设置" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="24" strokeColor="0x5886c9" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+	<e:Group id="grpCreateTexasRoom" width="600" height="480"  top="80"  horizontalCenter="0" locked="true" visible="false">
+		 <e:Group  width="100%" height="50" top="10">
+		 	<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+		 	<e:Label text="盲注:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:RadioButton groupName="texasBottomOpts" id="texasBottomOpt1" label="1/2" skinName="TRadioButtonSkin" selected="true" verticalCenter="0" left="115"/>
+			<e:RadioButton groupName="texasBottomOpts" id="texasBottomOpt2" label="2/4" skinName="TRadioButtonSkin" selected="false" left="255" verticalCenter="0"/>
+			<e:RadioButton groupName="texasBottomOpts" id="texasBottomOpt3" label="3/6" skinName="TRadioButtonSkin" selected="false" verticalCenter="0" left="390"/>
+		</e:Group>
+		<e:Group width="100%" height="50" top="70">
+			<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+			<e:Label text="局数:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:RadioButton groupName="texasRoundsOpts" id="texasRoundsOpt1" label="3" skinName="TRadioButtonSkin" selected="true" verticalCenter="0" left="115"/>
+			<e:RadioButton groupName="texasRoundsOpts" id="texasRoundsOpt2" label="4" skinName="TRadioButtonSkin" selected="false" left="255" verticalCenter="0"/>
+			<e:RadioButton groupName="texasRoundsOpts" id="texasRoundsOpt3" label="5" skinName="TRadioButtonSkin" selected="false" verticalCenter="0" left="390"/>
+		</e:Group>
+		<e:Group width="100%" height="50" top="130">
+			<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+			<e:Label text="最小带入:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:RadioButton groupName="texasMinChipsOpts" id="texasMinChipsOpt1" label="5" skinName="TRadioButtonSkin" selected="true" verticalCenter="0" left="115"/>
+			<e:RadioButton groupName="texasMinChipsOpts" id="texasMinChipsOpt2" label="10" skinName="TRadioButtonSkin" selected="false" left="255" verticalCenter="0"/>
+			<e:RadioButton groupName="texasMinChipsOpts" id="texasMinChipsOpt3" label="20" skinName="TRadioButtonSkin" selected="false" verticalCenter="0" left="390"/>
+		</e:Group>
+		<e:Group width="100%" height="50" top="190">
+			<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+			<e:Label text="最大带入:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:RadioButton groupName="texasMaxChipsOpts" id="texasMaxChipsOpt1" label="10" skinName="TRadioButtonSkin" selected="true" verticalCenter="0" left="115"/>
+			<e:RadioButton groupName="texasMaxChipsOpts" id="texasMaxChipsOpt2" label="20" skinName="TRadioButtonSkin" selected="false" left="255" verticalCenter="0"/>
+			<e:RadioButton groupName="texasMaxChipsOpts" id="texasMaxChipsOpt3" label="40" skinName="TRadioButtonSkin" selected="false" verticalCenter="0" left="390"/>
+		</e:Group>
+		<e:Group width="100%" height="50" top="260">
+			<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+			<e:Label text="人数:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:HSlider id="hsTexasCapacity" height="20" skinName="CHSliderSkin" anchorOffsetX="0" anchorOffsetY="0" width="20" verticalCenter="0" left="305"/>
+			<e:Label id="labTexasCapacity" text="3" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" right="30" width="50"/>
+		</e:Group>
+
+		<ns1:EButton id="btnCreateTexasRoom" width="160" height="57"  bottom="20" horizontalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_check_png"/>
+				<e:Label text="设置" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="24" strokeColor="0x5886c9" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+	<e:Group id="grpCreateQznnRoom" width="600" height="480"  top="80"  horizontalCenter="0" locked="true" visible="false">
+		 <e:Group  width="100%" height="50" top="10">
+		 	<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+		 	<e:Label text="底分:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:RadioButton groupName="qznnBottomOpts" id="qznnBottomOpt1" label="1" skinName="TRadioButtonSkin" selected="true" verticalCenter="0" left="115"/>
+			<e:RadioButton groupName="qznnBottomOpts" id="qznnBottomOpt2" label="2" skinName="TRadioButtonSkin" selected="false" left="255" verticalCenter="0"/>
+			<e:RadioButton groupName="qznnBottomOpts" id="qznnBottomOpt3" label="3" skinName="TRadioButtonSkin" selected="false" verticalCenter="0" left="390"/>
+		</e:Group>
+		<e:Group width="100%" height="50" top="80">
+			<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+			<e:Label text="局数:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:RadioButton groupName="qznnRoundsOpts" id="qznnRoundsOpt1" label="3" skinName="TRadioButtonSkin" selected="true" verticalCenter="0" left="115"/>
+			<e:RadioButton groupName="qznnRoundsOpts" id="qznnRoundsOpt2" label="4" skinName="TRadioButtonSkin" selected="false" left="255" verticalCenter="0"/>
+			<e:RadioButton groupName="qznnRoundsOpts" id="qznnRoundsOpt3" label="15" skinName="TRadioButtonSkin" selected="false" verticalCenter="0" left="390"/>
+		</e:Group>
+		<e:Group width="100%" height="50" top="150">
+			<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+			<e:Label text="最小带入:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:RadioButton groupName="qznnMinChipsOpts" id="qznnMinChipsOpt1" label="5" skinName="TRadioButtonSkin" selected="true" verticalCenter="0" left="115"/>
+			<e:RadioButton groupName="qznnMinChipsOpts" id="qznnMinChipsOpt2" label="10" skinName="TRadioButtonSkin" selected="false" left="255" verticalCenter="0"/>
+			<e:RadioButton groupName="qznnMinChipsOpts" id="qznnMinChipsOpt3" label="20" skinName="TRadioButtonSkin" selected="false" verticalCenter="0" left="390"/>
+		</e:Group>
+		<e:Group width="100%" height="50" top="220">
+			<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+			<e:Label text="人数:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:HSlider id="hsQznnCapacity" height="20" skinName="CHSliderSkin" anchorOffsetX="0" anchorOffsetY="0" width="20" verticalCenter="0" left="305"/>
+			<e:Label id="labQznnCapacity" text="3" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" right="30" width="50"/>
+		</e:Group>
+		<ns1:EButton id="btnCreateQznnRoom" width="160" height="57"  bottom="20" horizontalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_check_png"/>
+				<e:Label text="设置" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="24" strokeColor="0x5886c9" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+	<e:Group id="grpCreateZjhRoom" width="600" height="480"  top="80"  horizontalCenter="0" locked="true" visible="false">
+		 <e:Group  width="100%" height="50" top="10">
+		 	<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+		 	<e:Label text="底分:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:RadioButton groupName="zjhBottomOpts" id="zjhBottomOpt1" label="1" skinName="TRadioButtonSkin" selected="true" verticalCenter="0" left="115"/>
+			<e:RadioButton groupName="zjhBottomOpts" id="zjhBottomOpt2" label="2" skinName="TRadioButtonSkin" selected="false" left="255" verticalCenter="0"/>
+			<e:RadioButton groupName="zjhBottomOpts" id="zjhBottomOpt3" label="3" skinName="TRadioButtonSkin" selected="false" verticalCenter="0" left="390"/>
+		</e:Group>
+		<e:Group width="100%" height="50" top="70">
+			<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+			<e:Label text="局数:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:RadioButton groupName="zjhRoundsOpts" id="zjhRoundsOpt1" label="3" skinName="TRadioButtonSkin" selected="true" verticalCenter="0" left="115"/>
+			<e:RadioButton groupName="zjhRoundsOpts" id="zjhRoundsOpt2" label="4" skinName="TRadioButtonSkin" selected="false" left="255" verticalCenter="0"/>
+			<e:RadioButton groupName="zjhRoundsOpts" id="zjhRoundsOpt3" label="5" skinName="TRadioButtonSkin" selected="false" verticalCenter="0" left="390"/>
+		</e:Group>
+		<e:Group width="100%" height="50" top="130">
+			<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+			<e:Label text="最小带入:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:RadioButton groupName="zjhMinChipsOpts" id="zjhMinChipsOpt1" label="5" skinName="TRadioButtonSkin" selected="true" verticalCenter="0" left="115"/>
+			<e:RadioButton groupName="zjhMinChipsOpts" id="zjhMinChipsOpt2" label="10" skinName="TRadioButtonSkin" selected="false" left="255" verticalCenter="0"/>
+			<e:RadioButton groupName="zjhMinChipsOpts" id="zjhMinChipsOpt3" label="20" skinName="TRadioButtonSkin" selected="false" verticalCenter="0" left="390"/>
+		</e:Group>
+		<e:Group width="100%" height="50" top="190">
+			<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+			<e:Label text="最大带入:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:RadioButton groupName="zjhMaxChipsOpts" id="zjhMaxChipsOpt1" label="10" skinName="TRadioButtonSkin" selected="true" verticalCenter="0" left="115"/>
+			<e:RadioButton groupName="zjhMaxChipsOpts" id="zjhMaxChipsOpt2" label="20" skinName="TRadioButtonSkin" selected="false" left="255" verticalCenter="0"/>
+			<e:RadioButton groupName="zjhMaxChipsOpts" id="zjhMaxChipsOpt3" label="40" skinName="TRadioButtonSkin" selected="false" verticalCenter="0" left="390"/>
+		</e:Group>
+		<e:Group width="100%" height="50" top="260">
+			<e:Image width="100%" height="1"  alpha="0.5" fillMode="repeat" source="white_dot_png" bottom="0" horizontalCenter="0"/>
+			<e:Label text="人数:" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" left="10"/>
+			<e:HSlider id="hsZjhCapacity" height="20" skinName="CHSliderSkin" anchorOffsetX="0" anchorOffsetY="0" width="20" verticalCenter="0" left="305"/>
+			<e:Label id="labZjhCapacity" text="3" textColor="0xFFFFFF" verticalCenter="0" fontFamily="Microsoft YaHei" size="24" strokeColor="0x6A6B70" stroke="3" verticalAlign="middle" textAlign="center" bold="false" right="30" width="50"/>
+		</e:Group>
+
+		<ns1:EButton id="btnCreateZjhRoom" width="160" height="57"  bottom="20" horizontalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_check_png"/>
+				<e:Label text="设置" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="24" strokeColor="0x5886c9" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+</e:Skin>

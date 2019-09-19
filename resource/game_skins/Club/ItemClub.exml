@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ItemClubSkin" width="620" height="70" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Image id="img_dialog_outer" top="0" bottom="0" left="0" right="0" source="win_bg_png" fillMode="repeat"  locked="true"/>
+	<e:Image source="club_icon_png" left="0" verticalCenter="0" width="70" height="70" locked="true"/>
+	<e:Label id="labClubName" text="俱乐部的名字" fontFamily="微软雅黑" size="22" width="160" textAlign="left" left="75" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xf9f5e8" top="0" locked="true"/>
+	<e:Label text="ID:" fontFamily="微软雅黑" textAlign="left" width="31" size="20" height="35" verticalAlign="middle" left="220" anchorOffsetX="0" top="0" textColor="0xedbe31" locked="true"/>
+	<e:Label id="labClubId" text="2123121" fontFamily="微软雅黑" textAlign="left" width="94" size="20" height="35" verticalAlign="middle" textColor="0xF9F5E8" left="250" anchorOffsetX="0" top="0" locked="true"/>
+	<e:Label text="游戏:" fontFamily="微软雅黑" textAlign="left" width="50" size="20"  height="35" verticalAlign="middle" left="340" top="0" anchorOffsetX="0" textColor="0xedbe31" locked="true"/>
+	<e:Label id="labGameType" text="德州扑克" fontFamily="微软雅黑" textAlign="left" width="80" size="20"  height="35" verticalAlign="middle" left="390" textColor="0xf9f5e8" top="0" anchorOffsetX="0" locked="true"/>
+	<e:Image left="80" width="25" height="25" top="40" source="club_members_png" locked="true"/>
+	<e:Label id="labClubMembers" text="231/500" fontFamily="微软雅黑" textAlign="left" width="88" size="18"  height="35" verticalAlign="middle" textColor="0xf9f5e8" top="35" anchorOffsetX="0" left="110" locked="true"/>
+	<e:Label id="labState" text="ACTIVE" fontFamily="微软雅黑" textAlign="left" width="90" size="18"  height="35" verticalAlign="middle" top="35" anchorOffsetX="0" left="190" textColor="0xedbe31" locked="true"/>
+	<e:Image left="270" width="25" height="25" top="40" source="club_expiration_png" locked="true"/>
+	<e:Label id="labCreateTime" text="2018-12-30 18:00:00" fontFamily="微软雅黑" textAlign="left" width="183" size="18"  height="35" verticalAlign="middle" textColor="0xf9f5e8" top="35" anchorOffsetX="0" left="300" locked="true"/>
+	<ns1:EButton id="btnAction" width="130" height="60"  right="10" verticalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_yellow_s_png"/>
+				<e:Label text="加入" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0xfc9f3a" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+	</ns1:EButton>
+	<e:Image source="white_dot_png" horizontalCenter="0" width="100%" bottom="0" locked="true"/>
+</e:Skin>

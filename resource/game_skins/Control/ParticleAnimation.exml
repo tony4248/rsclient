@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ParticleAnimationSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="0,1,2">
+	<e:Image source="icon_g_point2_png" includeIn="2" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image source="icon_g_point1_png" includeIn="1" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image source="icon_g_point0_png" horizontalCenter="0" verticalCenter="0" includeIn="0"/>
+</e:Skin>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DropDownListSkin" width="200" height="60" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="listMask" width="200" height="20" y="0" x="0"/>
+	<e:Rect id="menuBgMask" width="200" height="20" x="0" y="0"/>
+	<e:Image id="menuBg" source="dropdown_bg_png" x="0" y="0" mask="menuBgMask" anchorOffsetX="0" width="100%" anchorOffsetY="0" scale9Grid="13,5,150,36"/>
+	<e:List id="list" width="200" anchorOffsetX="0" x="0" y="0" mask="listMask"/>
+	<e:Button id="menuBtn" label="下拉选择" anchorOffsetX="0" width="208" horizontalCenter="-1" verticalCenter="-2" anchorOffsetY="0" height="66" locked="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="dropdown_btn_png" source.down="dropdown_btn_png"/>
+			<e:Label id="labelDisplay" left="60" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="24" strokeColor="0x472439" stroke="3" />
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

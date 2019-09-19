@@ -1,0 +1,82 @@
+{
+  "global": {
+    "globalAutoLayerMarkEnable": true,
+    "gridColor": 2960428,
+    "gridEnabled": true,
+    "gridSize": "40"
+  },
+  "162aaf9c32c": {
+    "guideLines": [
+      {
+        "type": "h",
+        "pos": -46.667
+      },
+      {
+        "type": "h",
+        "pos": -61.333
+      }
+    ]
+  },
+  "162bf346a69": {
+    "path": "Pdk\\Scene\\PDKScene.ts",
+    "class": "PDKScene",
+    "parentPath": ""
+  },
+  "162c3301a47": {
+    "path": "Pdk\\Control\\PDKCard.ts",
+    "class": "PDKCard",
+    "parentPath": ""
+  },
+  "162e31fdde0": {
+    "path": "Common\\Control\\Dialog.ts",
+    "class": "Dialog",
+    "parentPath": ""
+  },
+  "162ed7b12d1": {
+    "path": "..\\resource\\GameSkin\\Ddz\\DdzLoadScene.ts",
+    "class": "DdzLoadScene",
+    "parentPath": ""
+  },
+  "162ee0ac128": {
+    "path": "Ddz\\Scene\\DdzLoadScene.ts",
+    "class": "DdzLoadScene",
+    "parentPath": ""
+  },
+  "162f2afd64a": {
+    "path": "..\\resource\\GameSkin\\Ddz\\DdzCreateScene.ts",
+    "class": "DdzCreateScene",
+    "parentPath": ""
+  },
+  "162f2b2d967": {
+    "path": "..\\resource\\GameSkin\\Ddz\\DdzSelectScene.ts",
+    "class": "DdzSelectScene",
+    "parentPath": ""
+  },
+  "162f2b6a664": {
+    "path": "..\\resource\\GameSkin\\Common\\LoadScene.ts",
+    "class": "LoadScene",
+    "parentPath": ""
+  },
+  "162f2bf5786": {
+    "path": "Ddz\\Scene\\LoadView.ts",
+    "class": "LoadView",
+    "parentPath": ""
+  },
+  "16321252166": {
+    "path": "Ddz\\Scene\\CreateRoomScene.ts",
+    "class": "CreateRoomScene",
+    "parentPath": ""
+  },
+  "16406b25a9b": {
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "useBgImage": true,
+    "useBgColor": true,
+    "backgroundAlpha": 100
+  },
+  "164d016c1b4": {
+    "guideLinesEnabled": false
+  }
+}

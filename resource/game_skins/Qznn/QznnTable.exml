@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="QznnTableSkin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+    <e:Image source="qznntable_png" left="0" top="0" right="0" bottom="0" scale9Grid="243,136,472,336" locked="true"/>
+	<e:Group id="grpLeftTop" width="430.67" height="75"  anchorOffsetY="0" anchorOffsetX="0" top="10" left="10" locked="true">
+		<ns1:EButton id="btnGoBack" width="75" height="75" top="0" left="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_back_png"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnScores" left="100" verticalCenter="0" width="75" anchorOffsetY="0" height="75">
+				<ns1:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_scores_png"/>
+					</e:Skin>
+				</ns1:skinName>
+		</ns1:EButton>
+		<e:Group id="grpEntityId" height="50"  anchorOffsetY="0" anchorOffsetX="0" left="200" width="230" top="0">
+			<e:Image width="140" height="45" source="txt_bg_png" verticalCenter="0" left="90"/>
+			<e:Label text="房间号:" fontFamily="微软雅黑" textAlign="left" width="90" size="24"  height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xcec7b3" bold="true" verticalCenter="0.5" left="10"/>
+			<e:Label id="labEntityId" text="803832" fontFamily="微软雅黑" textAlign="left" width="130" size="26" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xf4ba0c" stroke="3" bold="true" verticalCenter="0" left="100"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="grpSetting" width="201.33" height="75" anchorOffsetY="0" right="10" top="10" anchorOffsetX="0">
+		<ns1:EButton id="btnEnableHost" width="75" anchorOffsetY="0" height="75" verticalCenter="0.5" left="10">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_host_png"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnSetting" right="10" verticalCenter="0" width="75" anchorOffsetY="0" height="75">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="menu_setting_png"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>	
+	</e:Group>
+	<e:Label id="labRoundNums" text="" size="18" textColor="0xFFFFFF" fontFamily="Microsoft YaHei" horizontalCenter="0" verticalAlign="middle" textAlign="center" bold="true" stroke="3" strokeColor="0x9d071a" top="180"/>
+	<e:Group id="grpPokersInHand" anchorOffsetX="0" anchorOffsetY="0" width="500" height="110" horizontalCenter="0" bottom="20" locked="true">
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="grpSubmitPTControls" anchorOffsetX="0" anchorOffsetY="0" width="160" height="150" horizontalCenter="330.5" bottom="20" locked="true" visible="false">
+		<ns1:EButton id="btnHasCow" anchorOffsetX="0" anchorOffsetY="0" height="65" width="130" horizontalCenter="0" verticalCenter="-40">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="有牛" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0x31750f" stroke="1" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnHasntCow" anchorOffsetX="0" anchorOffsetY="0" height="65" width="130" horizontalCenter="0" verticalCenter="40">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_fold_png"/>
+				<e:Label text="无牛" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0xbc0003" stroke="1" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+	<e:Group id="grpPutBetsControls" width="700" height="70" anchorOffsetY="0" anchorOffsetX="0" bottom="140" horizontalCenter="0" locked="true" visible="false">
+		<ns1:EButton id="btnBet5x" height="65" width="120" left="10" verticalCenter="0">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="5倍" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0x31750f" stroke="1" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnBet10x" height="65" width="120" left="150" verticalCenter="0">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="10倍" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0x31750f" stroke="1" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnBet15x" height="65" width="120" horizontalCenter="0" verticalCenter="0">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="15倍" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0x31750f" stroke="1" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnBet20x" height="65" width="120" verticalCenter="0.5" right="145">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="20倍" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0x31750f" stroke="1" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnBet25x" height="65" width="120" verticalCenter="0" right="5">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="25倍" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0x31750f" stroke="1" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+	<e:Group id="grpCallDealerControls" width="700" height="70" anchorOffsetY="0" anchorOffsetX="0" bottom="140" horizontalCenter="0" locked="true" visible="false">
+		<ns1:EButton id="btnNoCall" height="65" width="120" left="10" verticalCenter="0">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_check_png"/>
+				<e:Label text="不抢" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0x437ddb" stroke="1" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnCall1x" height="65" width="120" left="150" verticalCenter="0">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="1倍" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0x31750f" stroke="1" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnCall2x" height="65" width="120" verticalCenter="0" horizontalCenter="0">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="2倍" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0x31750f" stroke="1" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnCall3x" height="65" width="120" verticalCenter="0" right="145">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="3倍" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0x31750f" stroke="1" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnCall4x" height="65" width="120" verticalCenter="0" right="5">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="4倍" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0x31750f" stroke="1" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+	<e:Group id="grpPokers_Seat2" height="60" anchorOffsetY="0" anchorOffsetX="0" right="220" width="160" bottom="220" locked="true">
+	</e:Group>
+	<e:Group id="grpPokers_Seat3" height="60" anchorOffsetY="0" anchorOffsetX="0" top="295" right="220" width="160" locked="true">
+	</e:Group>
+	<e:Group id="grpPokers_Seat4" height="60" anchorOffsetY="0" anchorOffsetX="0" top="150" right="220" width="160" locked="true">
+	</e:Group>
+	<e:Group id="grpPokers_Seat7" width="160" height="60" anchorOffsetY="0" anchorOffsetX="0" top="150" left="220" locked="true">
+	</e:Group>
+	<e:Group id="grpPokers_Seat6" width="160" height="60" anchorOffsetY="0" anchorOffsetX="0" top="150" left="400" locked="true"/>
+	<e:Group id="grpPokers_Seat5" width="160" height="60" anchorOffsetY="0" anchorOffsetX="0" top="150" right="400" locked="true"/>
+	<e:Group id="grpPokers_Seat8" anchorOffsetY="0" anchorOffsetX="0" width="160" height="60" top="295" left="220" locked="true">
+	</e:Group>
+	<e:Group id="grpPokers_Seat9" height="60" anchorOffsetY="0" anchorOffsetX="0" width="160" left="220" top="440" locked="true">
+	</e:Group>
+	<e:Group id="grpTimer" height="60" anchorOffsetY="0" anchorOffsetX="0" width="400" verticalCenter="0" horizontalCenter="0" locked="true"/>
+	<e:Group id="grpPokers_Seat1" height="60" anchorOffsetY="0" anchorOffsetX="0" width="140" bottom="155" horizontalCenter="0" touchThrough="true" locked="true"/>
+	<e:Group id="grpCowCalc" height="60" anchorOffsetY="0" anchorOffsetX="0" width="480" bottom="155" horizontalCenter="-4.5" visible="false" locked="true">
+		<ns1:EButton id="btnCowTips" height="65" width="120" verticalCenter="0" left="0">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_raise_png"/>
+				<e:Label text="提示" textColor="0x282626" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0xf4cf13" stroke="1" textAlign="center" verticalAlign="middle"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<e:Image width="335" height="60" anchorOffsetX="0" anchorOffsetY="0" source="cow_calc_png" right="0" verticalCenter="0"/>
+		<e:Label id="labSelPoker1" text="5" size="26" bold="false" textColor="0xFFFFFF" fontFamily="微软雅黑" verticalCenter="0" right="290"/>
+		<e:Label id="labSelPoker2" text="2" size="26" bold="false" textColor="0xFFFFFF" fontFamily="微软雅黑" verticalCenter="0" right="210"/>
+		<e:Label id="labSelPoker3" text="3" size="26" bold="false" textColor="0xFFFFFF" fontFamily="微软雅黑" verticalCenter="0" right="130"/>
+		<e:Label id="labPokersSum" text="10" size="26" bold="false" textColor="0xFFFFFF" fontFamily="微软雅黑" verticalCenter="0" right="30"/>
+	</e:Group>
+	<e:Group id="grpProfile_Seat1" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" bottom="5" left="50" locked="true">
+	</e:Group>
+	<e:Group id="grpProfile_Seat6" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" top="60" left="380" locked="true">
+	</e:Group>
+	<e:Group id="grpProfile_Seat5" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" top="60" right="380" locked="true">
+	</e:Group>
+	<e:Group id="grpProfile_Seat2" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" right="20" bottom="200" locked="true">
+	</e:Group>
+	<e:Group id="grpProfile_Seat3" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" top="280" right="20" locked="true">
+	</e:Group>
+	<e:Group id="grpProfile_Seat4" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" top="135" right="20" locked="true">
+	</e:Group>
+	<e:Group id="grpProfile_Seat7" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" top="135" left="20" locked="true">
+	</e:Group>
+	<e:Group id="grpProfile_Seat8" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" left="20" top="280" locked="true">
+	</e:Group>
+	<e:Group id="grpProfile_Seat9" width="195" height="90" anchorOffsetY="0" anchorOffsetX="0" left="20" top="430" locked="true">
+	</e:Group>
+	<e:Group id="grpReadyAndInvite" width="600" height="130" horizontalCenter="-11.5" bottom="256" anchorOffsetX="0">
+		<ns1:EButton id="btnReady" width="180" height="65"  x="5" y="25">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_raise_png"/>
+					<e:Label text="准备" textColor="0x282626" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0xf4cf13" stroke="1" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnGoMatching" width="180" height="65"  x="200" y="25">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_raise_png"/>
+					<e:Label text="开始匹配" textColor="0x282626" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0xf4cf13" stroke="1" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<ns1:EButton id="btnInvite" width="180" height="65" x="400" y="25">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_raise_png"/>
+					<e:Label text="邀请好友" textColor="0x282626" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="28" strokeColor="0xf4cf13" stroke="1" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+	<e:Group id="grpImgRes" anchorOffsetX="0" anchorOffsetY="0" width="400" height="150" horizontalCenter="0" verticalCenter="0" touchThrough="true" locked="true">
+	</e:Group>
+	<e:Group id="grpHost" height="100%" width="100%" bottom="0" right="0" left="0" locked="true" visible="false">
+		<e:Image id="imgHostBg" source="win_bg_png" fillMode="repeat" anchorOffsetX="0" bottom="0" left="0" right="0" top="0"/>
+		<ns1:EButton id="btnDisableHost" height="65" width="165" horizontalCenter="0" bottom="20">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_check_png"/>
+				<e:Label text="取消托管" size="26" bold="false" textColor="0xFFFFFF" fontFamily="微软雅黑" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+	<e:Group id="grpDeck" anchorOffsetX="0" anchorOffsetY="0" width="20" height="20" horizontalCenter="0" verticalCenter="0" locked="true">
+	</e:Group>
+	<e:Group id="grpSystemMessage" width="600" height="45" horizontalCenter="0" verticalCenter="-100" touchThrough="true" locked="true"/>
+	<e:Group id="grpCenter" width="5" height="5" horizontalCenter="0" verticalCenter="-100" touchThrough="true" locked="true"/>
+</e:Skin>

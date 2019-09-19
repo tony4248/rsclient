@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EIconSkin" width="250" height="330" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<e:Image id="ImgBtn" source="coin_mode_bas_png"  width="100%" height="100%"  horizontalCenter="0" verticalCenter="0" />
+	<e:Label id="lbBottomScore" text="底分：" horizontalCenter="-40"  fontFamily="Microsoft YaHei" textAlign="right" stroke="1" strokeColor="0xBCB7B7" size="22" anchorOffsetX="0" width="120" height="25" bottom="55"/>
+	<e:Label id="lbMinChips" text="入场限制：" horizontalCenter="-40" fontFamily="Microsoft YaHei" textAlign="right" stroke="1" strokeColor="0xBCB7B7" size="22" width="120" height="25" bottom="25"/>
+	<e:Label id="lbBottomScoreVal" text="5" horizontalCenter="60" fontFamily="Microsoft YaHei" textAlign="left" stroke="1" strokeColor="0xBCB7B7" size="22" anchorOffsetX="0" width="75" height="25" bottom="55"/>
+	<e:Label id="lbMinChipsVal" text="10000" fontFamily="Microsoft YaHei" textAlign="left" stroke="1" strokeColor="0xBCB7B7" size="22" horizontalCenter="60" anchorOffsetX="0" width="75" height="25" bottom="25"/>
+</e:Skin>

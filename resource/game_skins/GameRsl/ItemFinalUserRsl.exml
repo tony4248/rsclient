@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ItemFinalUserRslSkin" width="620" height="35" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Image id="img_dialog_outer" top="0" bottom="0" left="0" right="0" source="win_bg_png" fillMode="repeat" />
+	<e:Label id="labUserName" text="我是你爸爸的" fontFamily="微软雅黑" textAlign="left" width="150" size="20" height="35" verticalAlign="middle" textColor="0xF9F5E8" left="10" anchorOffsetX="0" top="0"/>
+	<e:Label text="ID:" fontFamily="微软雅黑" textAlign="left" width="31" size="20" height="35" verticalAlign="middle" left="180" anchorOffsetX="0" top="0" textColor="0xEDBE31"/>
+	<e:Label id="labUserId" text="2123121" fontFamily="微软雅黑" textAlign="left" width="94" size="20" height="35" verticalAlign="middle" textColor="0xF9F5E8" left="230" anchorOffsetX="0" top="0"/>
+	<e:Label text="总得分" fontFamily="微软雅黑" textAlign="left" width="100" size="20" height="35" verticalAlign="middle" left="360" top="0" anchorOffsetX="0" textColor="0xEDBE31" anchorOffsetY="0"/>
+	<e:Label id="labAwarded" text="+3000" fontFamily="微软雅黑" textAlign="left" width="100" size="20" height="35" verticalAlign="middle" top="0" anchorOffsetX="0" left="440" bold="true" textColor="0x1F7F0E" stroke="1" strokeColor="0x4BE22F"/>
+	<e:Image source="white_dot_png" horizontalCenter="0" width="100%" bottom="0"/>
+</e:Skin>

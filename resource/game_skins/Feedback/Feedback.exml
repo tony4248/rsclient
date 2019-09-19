@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FeedbackSkin" width="600" height="500" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_info_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0"  scale9Grid="96,72,580,433" locked="true"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="10" left="10" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="8" right="10" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Image id="imgWinTitle" source="txt_title_feedback_png" horizontalCenter="0" top="20"/>
+	<e:Scroller skinName="ListSkin" width="500" height="400" horizontalCenter="0" top="60">
+		<e:Group id="grpFeedback" width="500" height="450" anchorOffsetX="0" anchorOffsetY="0" top="80" horizontalCenter="0">
+			<e:Label text="标题:" fontFamily="微软雅黑" textAlign="right" width="80" size="20"  height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xcec7b3" top="10" left="10"/>
+			<e:Group width="340" height="50" anchorOffsetX="0" anchorOffsetY="0" top="5" left="100">
+				<e:Image width="100%" height="100%" source="txt_bg_png" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labTitle" text="来自:" fontFamily="微软雅黑" textAlign="left" width="95%" size="20"  height="90%" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="1.5" anchorOffsetY="0" verticalCenter="0.5" textColor="0xffffff"/>
+			</e:Group>
+			<e:Label text="时间:" fontFamily="微软雅黑" textAlign="right" width="80" size="20"  height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xcec7b3" top="60" left="10"/>
+			<e:Group width="340" height="50" anchorOffsetX="0" anchorOffsetY="0" top="55" left="100">
+				<e:Image width="100%" height="100%" source="txt_bg_png" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labCreatedDate" text="来自:" fontFamily="微软雅黑" textAlign="left" width="95%" size="20"  height="90%" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="1.5" anchorOffsetY="0" verticalCenter="0.5" textColor="0xffffff"/>
+			</e:Group>
+			<e:Group width="400" height="150" anchorOffsetX="0" anchorOffsetY="0" top="110" horizontalCenter="0">
+				<e:Image width="100%" height="150" source="trans_bg_png" horizontalCenter="0"  anchorOffsetY="0" anchorOffsetX="0" scale9Grid="28,6,173,38" verticalCenter="0"/>
+				<e:Label id="labContent" text="来自:" fontFamily="微软雅黑" textAlign="left" width="95%" size="20"  height="150" verticalAlign="top" anchorOffsetX="0" horizontalCenter="1.5" anchorOffsetY="0" verticalCenter="0.5" textColor="0xffffff" multiline="true" wordWrap="true"/>
+			</e:Group>
+			<e:Label text="答复时间:" fontFamily="微软雅黑" textAlign="center" width="100" size="20"  height="35" verticalAlign="middle" anchorOffsetX="0" top="275" left="0" textColor="0xcec7b3"/>
+			<e:Group width="340" height="50" anchorOffsetX="0" anchorOffsetY="0" top="270" left="100">
+				<e:Image width="100%" height="100%" source="txt_bg_png" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labResponseDate" text="来自:" fontFamily="微软雅黑" textAlign="left" width="95%" size="20"  height="90%" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="1.5" anchorOffsetY="0" verticalCenter="0.5" textColor="0xffffff"/>
+			</e:Group>
+			<e:Group width="400" height="150" anchorOffsetX="0" anchorOffsetY="0" top="330" horizontalCenter="0">
+				<e:Image width="100%" height="150" source="trans_bg_png" horizontalCenter="0"  anchorOffsetY="0" anchorOffsetX="0" scale9Grid="28,6,173,38" y="0"/>
+				<e:Label id="labResponseContent" text="来自:" fontFamily="微软雅黑" textAlign="left" width="95%" size="20"  height="150" verticalAlign="top" anchorOffsetX="0" horizontalCenter="1.5" anchorOffsetY="0" verticalCenter="0.5" textColor="0xffffff" multiline="true" wordWrap="true"/>
+			</e:Group>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

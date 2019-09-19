@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EmailsSkin" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgWin" width="100%" height="100%" source="win_b_png" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="92,87,744,449"/>
+	<ns1:EButton id="btnGoBack" width="55" height="55" top="20" left="20" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnClose" width="55" height="55" top="20" right="20" locked="true">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_close_png"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:EButton>
+	<e:Image id="imgWinTitle" source="txt_title_email_png" horizontalCenter="0" top="25" locked="true"/>
+	<e:Group id="grpTabMenu" anchorOffsetY="0" top="90" width="200" left="20" height="480"  locked="true">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0"/>
+		<e:Group id="grpTabBtns" anchorOffsetY="0" width="200" height="360"  horizontalCenter="0" top="0">
+			<e:RadioButton groupName="tabEmailBtns" id="emailRadioBtn" label="系统邮件" skinName="CRadioButtonSkin" value="0" selected="true" horizontalCenter="0"/>
+			<e:RadioButton groupName="tabEmailBtns" label="好友邮件" skinName="CRadioButtonSkin" value="1" horizontalCenter="0"/>
+			<e:RadioButton groupName="tabEmailBtns" label="我发送的" skinName="CRadioButtonSkin" value="2" horizontalCenter="0"/>
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="20"/>
+			</e:layout>
+		</e:Group>
+		<e:Group width="100%" height="70" top="360" horizontalCenter="0">
+			<ns1:EButton id="btnSendEmailWin" width="175" height="65" bottom="0" horizontalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_call_png"/>
+				<e:Label text="发送邮件" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="24" strokeColor="0x1B8E15" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+			</ns1:EButton>
+			<e:layout>
+			<e:VerticalLayout gap="5" horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="grpEmail" anchorOffsetY="0" top="90" width="620" height="480"  left="240" locked="true">
+		<e:Image source="trans_bg_png" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="62,62,376,376"/>
+		<e:ViewStack id="vsEmails" width="100%" height="100%" anchorOffsetX="0" anchorOffsetY="0">
+		</e:ViewStack>
+	</e:Group>
+	<e:Group id="grpSystemEmails" width="620" height="480"  top="90"  left="240" locked="true">
+		<e:Group width="100%" height="50"  top="0"  horizontalCenter="0">
+			<e:Group width="60" height="100%"   verticalCenter="0" right="0">
+				<ns1:EButton id="btnRefresh1" width="40" height="40"  verticalCenter="0" horizontalCenter="0">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_refresh_png"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+			</e:Group>
+		</e:Group>
+		<e:Label id="lablistSystemEmailsNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="50" locked="true"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="430" horizontalCenter="0" top="50" locked="true">
+			<e:List id="listSystemEmails" itemRendererSkinName="ItemEmailSkin" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" >
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout gap="3" paddingLeft="5" paddingRight="5" horizontalAlign="justify" verticalAlign="justify"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="grpUserEmails" width="620" height="480"  top="90"  left="240" locked="true" visible="false">
+		<e:Group width="100%" height="50"  top="0"  horizontalCenter="0">
+			<e:Group width="60" height="100%"   verticalCenter="0" right="0">
+				<ns1:EButton id="btnRefresh2" width="40" height="40"  verticalCenter="0" horizontalCenter="0">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_refresh_png"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+			</e:Group>
+		</e:Group>
+		<e:Label id="lablistUserEmailsNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="50" locked="true"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="100%" horizontalCenter="0" top="50" locked="true">
+			<e:List id="listUserEmails" itemRendererSkinName="ItemEmailSkin" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" >
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout gap="3" paddingLeft="5" paddingRight="5" horizontalAlign="justify" verticalAlign="justify"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="grpSentEmails" width="620" height="480"  top="90"  left="240" locked="true" visible="false">
+		<e:Group width="100%" height="50"  top="0"  horizontalCenter="0">
+			<e:Group width="60" height="100%"   verticalCenter="0" right="0">
+				<ns1:EButton id="btnRefresh3" width="40" height="40"  verticalCenter="0" horizontalCenter="0">
+					<ns1:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_refresh_png"/>
+						</e:Skin>
+					</ns1:skinName>
+				</ns1:EButton>
+			</e:Group>
+		</e:Group>
+		<e:Label id="lablistSentEmailsNoData" text="暂无数据." fontFamily="微软雅黑" textAlign="center" width="100%" size="20" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xCEC7B3" horizontalCenter="0" top="50" locked="true"/>
+		<e:Scroller skinName="ListSkin" width="100%" height="100%" horizontalCenter="0" top="50">
+			<e:List id="listSentEmails" itemRendererSkinName="ItemEmailSkin" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" >
+				<e:ArrayCollection>
+					<e:Array>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout gap="3" paddingLeft="5" paddingRight="5" horizontalAlign="justify" verticalAlign="justify"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

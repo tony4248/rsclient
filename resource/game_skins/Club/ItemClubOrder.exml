@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ItemClubOrderSkin" width="620" height="35" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Image id="img_dialog_outer" top="0" bottom="0" left="0" right="0" source="win_bg_png" fillMode="repeat"  locked="true"/>
+	<e:Label id="lab1stTips" text="数额:" fontFamily="微软雅黑" textAlign="left" width="61" size="20" height="35" verticalAlign="middle" left="10" anchorOffsetX="0" top="0" textColor="0xedbe31" locked="true"/>
+	<e:Label id="labAmount" text="534567" fontFamily="微软雅黑" size="22" width="100" textAlign="left" left="70" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xf9f5e8" top="0" locked="true"/>
+	<e:Label text="更新值:" fontFamily="微软雅黑" textAlign="left" width="67" size="20" height="35" verticalAlign="middle" top="0" anchorOffsetX="0" left="170" textColor="0xedbe31" locked="true"/>
+	<e:Label id="labUpdatedAmt" text="10" fontFamily="微软雅黑" textAlign="left" width="100" size="22" height="35" verticalAlign="middle" textColor="0xF9F5E8" top="0" anchorOffsetX="0" left="245" locked="true"/>
+	<e:Image left="360" width="25" height="25" top="5" source="club_expiration_png" locked="true"/>
+	<e:Label id="labCreateTime" text="2018-12-30 18:00:00" fontFamily="微软雅黑" textAlign="left" width="222" size="20" height="35" verticalAlign="middle" textColor="0xF9F5E8" left="393" anchorOffsetX="0" top="0" locked="true"/>
+	<e:Image source="white_dot_png" horizontalCenter="0" width="100%" bottom="0" locked="true"/>
+</e:Skin>

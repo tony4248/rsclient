@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ItemAppliedMemberSkin" width="620" height="70" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Image id="img_dialog_outer" top="0" bottom="0" left="0" right="0" source="win_bg_png" fillMode="repeat"  locked="true"/>
+	<e:Group width="70" height="70"    verticalCenter="0" left="0" locked="true">
+		<e:Image id="imgMemberAvatar" source="avatar_man_png" width="54" height="54" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" locked="true"/>
+		<e:Image source="avatar_bg_png" verticalCenter="0" width="70" height="70" horizontalCenter="0" locked="true"/>
+	</e:Group>
+	<e:Label id="labMemberName" text="用户的名字" fontFamily="微软雅黑" size="22" width="160" textAlign="left" left="75" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xf9f5e8" top="0"/>
+	<e:Label text="ID:" fontFamily="微软雅黑" textAlign="left" width="31" size="20" height="35" verticalAlign="middle" left="200" anchorOffsetX="0" top="0" textColor="0xedbe31" locked="true"/>
+	<e:Label id="labMemberId" text="2123121" fontFamily="微软雅黑" textAlign="left" width="94" size="20" height="35" verticalAlign="middle" textColor="0xF9F5E8" left="240" anchorOffsetX="0" top="0" locked="true"/>
+	<e:Image left="75" width="25" height="25" top="40" source="club_expiration_png" locked="true"/>
+	<e:Label id="labCreateTime" text="2018-12-30 18:00:00" fontFamily="微软雅黑" textAlign="left" width="205" size="20"  height="35" verticalAlign="middle" textColor="0xf9f5e8" top="35" anchorOffsetX="0" left="110" locked="true"/>
+	<ns1:EButton id="btnApprove" width="130" height="60"  right="160" verticalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_yellow_s_png"/>
+				<e:Label text="批准" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0xfc9f3a" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+	</ns1:EButton>
+	<ns1:EButton id="btnDeny" width="130" height="60"  right="10" verticalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_purple_s_png"/>
+				<e:Label text="拒绝" textColor="0xFFFFFF" horizontalCenter="0" verticalCenter="0" bold="true" fontFamily="Microsoft YaHei" size="26" strokeColor="0x860DC6" stroke="3" textAlign="center" verticalAlign="middle"/>
+				</e:Skin>
+			</ns1:skinName>
+	</ns1:EButton>
+	<e:Image source="white_dot_png" horizontalCenter="0" width="100%" bottom="0" locked="true"/>
+</e:Skin>

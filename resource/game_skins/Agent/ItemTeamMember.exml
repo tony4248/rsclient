@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ItemTeamMemberSkin" width="620" height="35" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Image id="img_dialog_outer" top="0" bottom="0" left="0" right="0" source="win_bg_png" fillMode="repeat"  locked="true"/>
+	<e:Label id="labMemberName" text="用户的名字" fontFamily="微软雅黑" size="22" width="160" textAlign="left" left="30" height="35" verticalAlign="middle" anchorOffsetX="0" textColor="0xf9f5e8" verticalCenter="0"/>
+	<e:Label text="ID:" fontFamily="微软雅黑" textAlign="left" width="31" size="20" height="35" verticalAlign="middle" left="200" anchorOffsetX="0" top="0" textColor="0xedbe31"/>
+	<e:Label id="labMemberId" text="2123121" fontFamily="微软雅黑" textAlign="left" width="100" size="20" height="35" verticalAlign="middle" textColor="0xF9F5E8" left="240" anchorOffsetX="0" verticalCenter="0"/>
+	<e:Label text="级别关系:" fontFamily="微软雅黑" textAlign="left" width="97" size="20" height="35" verticalAlign="middle" left="380" anchorOffsetX="0" textColor="0xEDBE31" verticalCenter="0"/>
+	<e:Label id="labAagentLevel" text="1" fontFamily="微软雅黑" textAlign="left" width="94" size="20" height="35" verticalAlign="middle" textColor="0xF9F5E8" left="477" anchorOffsetX="0" verticalCenter="-1"/>
+	<e:Image source="white_dot_png" horizontalCenter="0" width="100%" bottom="0" locked="true"/>
+</e:Skin>

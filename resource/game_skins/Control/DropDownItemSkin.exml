@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DropDownItemSkin" width="200" height="45" xmlns:e="http://ns.egret.com/eui">
+	<e:Rect width="200" height="45" fillAlpha="0.1" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label anchorOffsetX="0" width="200" height="45" verticalAlign="middle" textAlign="left" text="{data.itemValue}" x="18" y="0"/>
+	<e:Image source="white_dot_png" alpha="0.6" horizontalCenter="0" width="98%" bottom="0" locked="true"/>
+</e:Skin>

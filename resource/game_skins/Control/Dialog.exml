@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DialogSkin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image id="imgBG" top="0" bottom="0" left="0" right="0" source="win_bg_png" fillMode="repeat" />
+	<e:Group width="580" height="460" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="win_info_png"  width="580" height="460" anchorOffsetY="0" scale9Grid="96,71,578,433" x="-1"/>
+		<e:Image id="imgWinTitle" width="380" height="100" horizontalCenter="0" top="-30" source="txt_title_tips_png"/>
+		<ns1:EButton id="btnOk" anchorOffsetY="0" height="60" width="60" right="-5" top="-5">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_close_png"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+		<e:Label id="lbMsg" text="提示信息" fontFamily="Microsoft YaHei" anchorOffsetX="0" anchorOffsetY="0" multiline="true" verticalAlign="middle" textAlign="center"  wordWrap="true" lineSpacing="10" width="534" height="300" horizontalCenter="0" verticalCenter="-10"/>
+		<ns1:EButton id="btnCancel" width="145" height="60"  horizontalCenter="0" bottom="30">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_yes_png"/>
+				</e:Skin>
+			</ns1:skinName>
+		</ns1:EButton>
+	</e:Group>
+</e:Skin>

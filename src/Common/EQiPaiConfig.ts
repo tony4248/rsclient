@@ -1,0 +1,4 @@
+class EQiPaiConfig {
+	public constructor() {
+	}
+}
