@@ -21,10 +21,11 @@ RedShark的客户端。采用Egret,支持金币场,房卡,俱乐部三种模式
 ![screen-shot](doc/agent.JPG)
 ![screen-shot](doc/login.JPG)
 ![screen-shot](doc/my.JPG)
-![screen-shot](doc/my.JPG)
-![screen-shot](doc/my.JPG)
-![screen-shot](doc/my.JPG)
-![screen-shot](doc/my.JPG)
+![screen-shot](doc/qznn.JPG)
+![screen-shot](doc/register.JPG)
+![screen-shot](doc/shop.JPG)
+![screen-shot](doc/texas.JPG)
+![screen-shot](doc/zjh.JPG)
 
 ## 依赖的平台
 * Egret
